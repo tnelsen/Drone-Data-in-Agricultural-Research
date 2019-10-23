@@ -2,9 +2,9 @@
 ##Origin=vector
 ##Rows=number 10
 ##Ranges=number 10
-##Length = number
-##Width = number
-##Radius = number
+##Length = number 4
+##Width = number 1
+##Radius = number 1
 ##Rectangular = boolean
 ##Output= output vector
 
