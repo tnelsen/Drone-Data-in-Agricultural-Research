@@ -2,9 +2,9 @@
 ##Origin=vector
 ##Rows=number 10
 ##Ranges=number 10
-##Length = number 4
-##Width = number 1
-##Radius = number 1
+##Length = number 
+##Width = number 
+##Radius = number 
 ##Rectangular = boolean
 ##Output= output vector
 
@@ -72,8 +72,8 @@ pts <- plot_centers_spdf
 
 # A) Construct buffers as points at given distance and bearing ---------------
 if (Rectangular == TRUE){
-	l <- Length
-	w <- Width
+	l <- ifelse(Length > 0, Length, plot_length*0.6)
+	w <- ifelse(Width > 0, Width, plot_width*0.6)
 	h <- sqrt(((l^2) + (w^2)))
 	
 	rad2deg <- function(rad) {
@@ -113,8 +113,9 @@ if (Rectangular == TRUE){
 	
 	Output <- plots_spdf
 } else {
+    r <- ifelse(Radius > 0, Radius, plot_width*0.3)
 	pts2 <- spTransform(pts, CRS( "+proj=utm +zone=10 +datum=WGS84 +units=m +no_defs")) 
-	spolys <- gBuffer(pts2, Radius, byid = FALSE)
+	spolys <- gBuffer(pts2, width = r, byid = TRUE)
 	# Disaggregate (split in unique polygons)
 	spolys <- sp::disaggregate(spolys)
 	plot_ids <- as.data.frame(as.integer(plot_ids[,1]))
