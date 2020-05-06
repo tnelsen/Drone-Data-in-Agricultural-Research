@@ -3,7 +3,7 @@ These standard operating procedures and scripts were developed for the Grain Cro
 
 Example data that works with these SOPs can be found at: https://ucdavis.box.com/s/lw9q3sc9xjv8ofr3zoqyreshajjselci
 
-Please cite as: Nelsen, Taylor, Drone-Data-in_Agricultural-Research, (2019, GitHub repository, https://github.com/tnelsen/Drone-Data-in-Agricultural-Research
+Please cite as: Nelsen, Taylor, Drone-Data-in-Agricultural-Research, (2019, GitHub repository, https://github.com/tnelsen/Drone-Data-in-Agricultural-Research
 
 @misc{
   author = {Nelsen, Taylor},
