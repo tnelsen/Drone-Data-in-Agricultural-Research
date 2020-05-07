@@ -1,13 +1,14 @@
 ---
 title: "Drone Data in QGIS for Agricultural Research"
-author: "Taylor Nelsen"
+author: Taylor Nelsen
 ---
 
-These standard operating procedures and scripts were developed for the Grain Cropping Systems Lab at UC Davis. They are geared towards use in agronomic crops in a research settting. 
+This is an example and starting point for multispectral image analysis designed for beginngers. The lessons can be taught in approximately 2 hours. They start with importing and visualizing drone based multispectral data in QGIS and move through how to extract data values for areas of interest in both a manual, low throughput method and a more automated, high throughput method.
 
-## Episodes
-1. Multispectral Data Visualization
-2. Multispectral Data Extraction
+
+## Topics
+1. [Multispectral Data Visualization](01-multispectral-data-visualization.md)
+2. [Multispectral Data Extraction](02-multispectral-data-extraction.md)
 
 ## Requirements
 
