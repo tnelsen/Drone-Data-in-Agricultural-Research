@@ -3,8 +3,6 @@ title: "Drone Data in QGIS for Agricultural Research"
 author: "Taylor Nelsen"
 ---
 
-
-
 These standard operating procedures and scripts were developed for the Grain Cropping Systems Lab at UC Davis. They are geared towards use in agronomic crops in a research settting. 
 
 ## Episodes
