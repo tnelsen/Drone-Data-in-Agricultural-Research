@@ -21,4 +21,4 @@ If you have any questions or feedback, please open an issue, or contact Taylor N
 
 Please cite as
 
-> Nelsen, Taylor, Drone-Data-in-Agricultural-Research, (2020, GitHub repository, https://github.com/tnelsen/Drone-Data-in-Agricultural-Research
+> Nelsen, Taylor, Drone-Data-in-Agricultural-Research, 2020, GitHub repository, https://github.com/tnelsen/Drone-Data-in-Agricultural-Research
