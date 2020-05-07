@@ -1,7 +1,4 @@
----
-title: "Multispectral Data Extraction"
-author: "Taylor Nelsen"
----
+# Multispectral Data Extraction
 
 > ### Learning Objectives
 >

@@ -1,7 +1,4 @@
----
-title: "Multispectral Data Visualization"
-author: "Taylor Nelsen"
----
+# Multispectral Data Visualization
 
 > ### Learning Objectives
 >

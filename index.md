@@ -1,7 +1,4 @@
----
-title: "Drone Data in QGIS for Agricultural Research"
-author: Taylor Nelsen
----
+# Drone Data in QGIS for Agricultural Research
 
 <p></p>
 
