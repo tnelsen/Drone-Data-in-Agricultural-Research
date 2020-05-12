@@ -1,12 +1,6 @@
 # Drone Data in QGIS for Agricultural Research
 
-<p></p>
-
-<div style="text-align: center; margin-top: 30px; margin-bottom: 30px;">
 ![](/img/cover-img.jpg)
-</div>
-
-<p></p>
 
 This is an example and starting point for multispectral image analysis designed for beginngers. The lessons can be taught in approximately 2 hours. They start with importing and visualizing drone based multispectral data in QGIS and move through how to extract data values for areas of interest in both a manual, low throughput method and a more automated, high throughput method.
 
