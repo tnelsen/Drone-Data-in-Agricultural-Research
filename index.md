@@ -16,9 +16,7 @@ These lessons are meant to be hands-on with users following along on thier own c
 
 ### Data
 
-Data files for the lesson are available and can be downloaded manually <a href=
-"./data" download="download">here</a>
-
+Data files for the lesson are available and can be downloaded <a href="https://github.com/tnelsen/Drone-Data-in-Agricultural-Research/archive/data.zip">HERE</a>.
 ### Software
 
 * Have QGIS installed. These lessons currently use QGIS 3.10.5. See https://qgis.org/en/site/forusers/download.html to download and for installation instructions.
