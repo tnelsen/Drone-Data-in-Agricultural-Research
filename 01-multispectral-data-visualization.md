@@ -29,6 +29,7 @@ A raster is data stored as individual pixels and displayed as an image. Most of 
 > At this point the "Solano_4l7l20_index_ndre" image should appear on the in both the `Layers Panel` and in the project window. The image will be greyscale by default. 
 
 ## Coloring rasters by values
+https://docs.qgis.org/3.10/en/docs/training_manual/basic_map/symbology.html?highlight=symbology
 
 1.	Right click the clipped image layer and choose "Properties"
 2.	In the "Style" tab (should open by default), under "Render type" choose "Singleband pseudocolor"
