@@ -2,11 +2,11 @@
 
 > ### Learning Objectives
 >
-> *Start a new project in QGIS
-> *Add a raster layer from a file
-> *Color a raster by its values
-> *Know best practices for image disply and communication
-> *Export a styled raster image
+> * Start a new project in QGIS
+> * Add a raster layer from a file
+> * Color a raster by its values
+> * Know best practices for image disply and communication
+> * Export a styled raster image
 
 ## Setting up the Project
 
