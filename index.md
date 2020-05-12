@@ -3,7 +3,7 @@
 <p></p>
 
 <div style="text-align: center; margin-top: 30px; margin-bottom: 30px;">
-![](img/cover-img.jpg)
+![](/img/cover-img.jpg)
 </div>
 
 <p></p>
