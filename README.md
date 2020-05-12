@@ -7,7 +7,7 @@ These methods were first developed for analyzing drone based multispectral image
 ## Requirements
 
 * Have QGIS installed. These lessons currently use QGIS 3.10.5. See https://qgis.org/en/site/forusers/download.html to download and for installation instructions. 
-* Download the data from: <a href="/data" download>here</a>
+* <a id="raw-url" href="https://raw.githubusercontent.com/tnelsen/Drone-Data-in-Agricultural-Research/master/example_data">Download the example data.</a>
 
 ## Topics
 
