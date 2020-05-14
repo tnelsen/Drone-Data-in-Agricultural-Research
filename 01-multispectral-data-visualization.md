@@ -16,23 +16,26 @@
 
 ## Adding raster layers
 
-A raster is data stored as individual pixels and displayed as an image. Most of the data from drone borne multispectral cameras, satillites, and more are stored as rasters. Images can have many extentions. The ones used in this example are .tif files. 
+A raster is data stored as individual pixels and displayed as an image. Most of the data from drone borne multispectral cameras, satellites, and other image acquisition technologies are stored as rasters. Images can have many extentions. The ones used in this example are .tif files. 
 
 1. Add a raster layer by navigating to the `Data Source Manager | Raster` by going to "Layer" > "Add Layer" > "Add Raster Layer..." (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>).
 2. Make sure the `Source type` radio button is selected to be `File`.
-3. Click the `...` to navigate to the raster image "Solano_4l7l20_index_ndre.tif" and open it. 
+3. Click the `...` to navigate to the raster image "Solano_4l7l20_index_ndre.tif" in the downloaded "Drone-Data-in_Agricultural-Research-data" folder and open it. 
 4. Choose `Add` to add the image to the project.
 5. Close the `Data Source Manager` after the image has sucessfully been added to the project. 
 
 > ### Check-in
 >
-> At this point the "Solano_4l7l20_index_ndre" image should appear on the in both the `Layers Panel` and in the project window. The image will be greyscale by default. 
+> At this point the "Solano_4l7l20_index_ndre" image should appear on the in both the `Layers Panel` and in the project window. The image will be greyscale by default. See below.
+>
+> ![](/img/check-in-1.png)
 
 ## Coloring rasters by values
-https://docs.qgis.org/3.10/en/docs/training_manual/basic_map/symbology.html?highlight=symbology
 
-1.	Right click the clipped image layer and choose "Properties"
-2.	In the "Style" tab (should open by default), under "Render type" choose "Singleband pseudocolor"
+1.	Right click the "Solano 4l17l20_index_ndre" layer ing the `Layers` panel and choose "Properties.
+![](/img/coloring-rasters-1.png)
+2.	In the "Symbology" tab (should open by default), under "Render type" choose "Singleband pseudocolor."
+![](/img/coloring-rasters-2.png)
 13.	Set the Min and Max to cover the extent of values that you would like to see in an end product legend. These values should be close to the values that the system recognizes are max and min.
 0.2- max for test image
 14.	The "RdYlGn" coloring scheme is often used to show plant health
