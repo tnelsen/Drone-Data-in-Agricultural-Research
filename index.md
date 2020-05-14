@@ -20,5 +20,5 @@ Data files for the lessons are available and can be downloaded <a href="https://
 
 ### Software
 
-* To install QGIS go to: https://qgis.org/en/site/forusers/download.html. For more detailed instructions about how to install QGIS go to: qgis.org/en/site/forusers/alldownloads.html. These lessons currently use the long-term (most stable) release of QGIS, QGIS 3.10.5 (A Coruña). 
+* To install QGIS go to: <a href = "https://qgis.org/en/site/forusers/download.html">https://qgis.org/en/site/forusers/download.html</a>. For more detailed instructions about how to install QGIS go to: <a href = "https://qgis.org/en/site/forusers/alldownloads.html">https://qgis.org/en/site/forusers/alldownloads.html</a>. These lessons currently use the long-term (most stable) release of QGIS, QGIS 3.10.5 (A Coruña). 
 * QGIS is available on Windows, macOS, Linux and Android. Please note that the workshops in DroneCamp 2020 using QGIS were developed and tested on Windows. The software appearance and behavior may differ based on operating systems.
