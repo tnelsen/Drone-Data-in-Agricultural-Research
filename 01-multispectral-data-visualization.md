@@ -34,26 +34,67 @@ A raster is data stored as individual pixels and displayed as an image. Most of 
 
 1.	Right click the "Solano 4l17l20_index_ndre" layer ing the `Layers` panel and choose "Properties.
 ![](/img/coloring-rasters-1.png)
-2.	In the "Symbology" tab (should open by default), under "Render type" choose "Singleband pseudocolor."
+2.	In the "Symbology" tab (should open by default), under "Render type" choose "Singleband pseudocolor"
 ![](/img/coloring-rasters-2.png)
-13.	Set the Min and Max to cover the extent of values that you would like to see in an end product legend. These values should be close to the values that the system recognizes are max and min.
-0.2- max for test image
-14.	The "RdYlGn" coloring scheme is often used to show plant health
-15.	Make sure the Mode is "Continuous"
-16.	Can change how it looks 
-Try brightness -10, saturation -10, contrast 15 (doesn't really make a difference)
-17.	Have the option to check "Clip out of range values"
-18.	Apply to get a preview of your image
-19.	Press ok when done and your image should look like:
+3.	Set the Min and Max to cover the extent of values that you would like to see in an end product legend. These values should be close to the values that the system recognizes are max and min.
+4. Set the `Interpolation` drop-down to "Linear"
+5. The "RdYlGn" Color ramp is often used to show plant health since it is an easy assumption that red equates to unhealthy plants and green represents healthy plants.
+6.	Make sure the `Mode` is "Continuous" raster images data is continuous - there are no groups or factors.
+7.	Press `Apply` to get a preview of your image.
+8.	Press `OK` when you are done. 
 
-> ### Image Display Best Practices 
+
+> ### Check-in
 >
-> Colors should be colorblind friendly. Don't include areas that are not of interest. Know what you are trying to show and maximize that in the image. Include a lengend. 
+> At this point the raster should be colored (as below). Looking at this raster, what things should we improve on before finalizing it?
+>
+> ![](/img/check-in-2.png)
 
-## Exporting styled images
+### Image Display Best Practices 
 
-.	Project > Import/Export > Export Map to Image
-.	Set parameters
-.	Press Save to select the folder you want to save under
+1. Colors should be colorblind friendly. 
+	+ To preview a Project as would be seen by a person with colorblindness go to "View" > "Preview Mode"
+	+ Here you can "Simulate Colorblindess" of multiple types as well as greyscale photocopies. 
+	+ In general, choose colors that are high contrast for the features you wish to highlight. 
+![](/img/display-bp-1.png)
 
-## Making a map 
+2. Don’t include areas that are not of interest such as roads or other fields in the color scheme. This ofter causes there to be less contrast in colors in the area of interest and can be distracting to a viewer. Know what you are trying to show and maximize that in the image.
+	+ One way to remove areas of interest is to clip to the area of interest.
+		+ Clip to an area of interest by navigating to the `Clip Raster by Extent` tool though "Raster" > "Extraction" > "Clip Raster by Extent..." (you can also navigate to the `Clip Raster by Extent` tool through the `Processing Toolbox`)
+		+ Choose a "Clipping extent" by clicking `...` and choosing "Select Extent on Canvas"
+		![](/img/clipping-by-extent-1.png)
+		+ This allow you to select an area of interest manually. 
+		![](/img/clipping-by-extent-2.png)
+		+ Once this is done, you have the option to save the "Clipped extent" as well as the option to "Open the output file after running algorithm." For this example, just make sure the Open the output file after running algorithm" box is checkd.
+		+ Click `Run`
+		+ Close the `Clp Raster by Extent` tool after the algorithm has finished. 
+		+ There should now be another layer in the Layers panels called "Clipped (extent)" and that layer should show up as a greyscale image in the project.
+		![](/img/clipping-by-extent-3.png)
+		+ Try coloring this layer just as the main layer was colored in the layer properties. 
+	+ Another way is to change the range of values and/or"Clip out of range values" in the layer properties.
+		+ Open the "Solano_4l7l20_index_ndre" layer properties.
+		+ Change the `Min` and `Max` to only include values in the area of interest. (`Min` = 0.3, `Max` = 0.7 for this image)
+		+ Press `Apply` to preview. 
+		+ To remove the areas out of the chosen range, scroll and check "Clip out of range values"
+		+ Press `OK`
+
+> ### Check-in
+>
+> At this point the raster should be colored (as below). Looking at this raster, what things should we improve on before finalizing it?
+>
+> ![](/img/check-in-3.png)
+
+3.  Make the project into a map in order to include a lengend 
+
+
+## Exporting and saving outside for use outside of QGIS
+
+1. To export the styled image
+	+ Navigate to "Project" > "Import/Export" > "Export Map to Image"
+	+ Set parameters such as dpi depending on your end use (print vs screen)
+	+ If you are not planning on using the geographic information from the styled image un-check `Append georeference information`
+	+ Press Save to select the folder you want to save under or press `Copy to Clipboard` to simply copy the image. 
+
+2. To export the map with the lengend
+
+
