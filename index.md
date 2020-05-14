@@ -12,11 +12,13 @@ This is an example and starting point for multispectral image analysis designed 
 
 ## Requirements
 
-These lessons are meant to be hands-on with users following along on thier own computers. Please, download the data and software before starting. 
+These lessons are meant to be hands-on with users following along on thier own computers. Please, download the data and software before starting. QGIS is a cross platform technology but sometimes looks and behaves differently on different operating systems. So please note that these lessons were developed and tested using Windows. 
 
 ### Data
 
-Data files for the lesson are available and can be downloaded <a href="https://github.com/tnelsen/Drone-Data-in-Agricultural-Research/archive/data.zip">HERE</a>.
+Data files for the lessons are available and can be downloaded <a href="https://github.com/tnelsen/Drone-Data-in-Agricultural-Research/archive/data.zip">HERE</a>.
+
 ### Software
 
-* Have QGIS installed. These lessons currently use QGIS 3.10.5. See https://qgis.org/en/site/forusers/download.html to download and for installation instructions.
+* To install QGIS go to: https://qgis.org/en/site/forusers/download.html. For more detailed instructions about how to install QGIS go to: qgis.org/en/site/forusers/alldownloads.html. These lessons currently use the long-term (most stable) release of QGIS, QGIS 3.10.5 (A Coruña). 
+* QGIS is available on Windows, macOS, Linux and Android. Please note that the workshops in DroneCamp 2020 using QGIS were developed and tested on Windows. The software appearance and behavior may differ based on operating systems.
