@@ -108,5 +108,6 @@ A raster is data stored as individual pixels and displayed as an image. Most of 
 	![](/img/map-4.png)
 	+ When finished with the map, under "Layout" the map can be exported as wither an image "Export as Image..." or a PDF "Export as PDF..."
 	![](/img/map-5.png)
+	+ For another, more indepth tutorial on map making see: https://docs.qgis.org/3.10/en/docs/training_manual/forestry/results_map.html
 
 
