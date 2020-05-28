@@ -95,6 +95,18 @@ A raster is data stored as individual pixels and displayed as an image. Most of 
 	+ If you are not planning on using the geographic information from the styled image un-check `Append georeference information`
 	+ Press Save to select the folder you want to save under or press `Copy to Clipboard` to simply copy the image. 
 
-2. To export the map with the lengend
+2. To export a map with a legend. 
+	+ Navigate to "Project" > "New Print Layout..."  (<kbd>Ctrl</kbd> + <kbd>P</kbd>)
+	+ Enter the title of the print layout in the popup window
+	+ To add a map navigate to "Add Item" > "Add Map" 
+	![](/img/map-1.png)
+	+ Draw a box to contain the map
+	![](/img/map-2.png)
+	+ To make sure the main canvas map is centered by right clicking the layer on the main canvas and chooseing "Zoom to Layer". Then in the print compose under item properties presss "Set Map Extent to Match Main Canvas Extent"
+	![](/img/map-3.png)
+	+ Add additional items such as a scale ar, north arrow, legend, and/or title under the "Add Item" drop down.
+	![](/img/map-4.png)
+	+ When finished with the map, under "Layout" the map can be exported as wither an image "Export as Image..." or a PDF "Export as PDF..."
+	![](/img/map-5.png)
 
 
