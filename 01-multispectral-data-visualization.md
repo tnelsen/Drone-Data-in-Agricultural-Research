@@ -63,20 +63,14 @@ A raster is data stored as individual pixels and displayed as an image. Most of 
 	+ One way to remove areas of interest is to clip to the area of interest.
 		+ Clip to an area of interest by navigating to the `Clip Raster by Extent` tool though "Raster" > "Extraction" > "Clip Raster by Extent..." (you can also navigate to the `Clip Raster by Extent` tool through the `Processing Toolbox`)
 		+ Choose a "Clipping extent" by clicking `...` and choosing "Select Extent on Canvas"
-		
 		![](/img/clipping-by-extent-1.png)
-		
 		+ This allow you to select an area of interest manually. 
-		
 		![](/img/clipping-by-extent-2.png)
-		
 		+ Once this is done, you have the option to save the "Clipped extent" as well as the option to "Open the output file after running algorithm." For this example, just make sure the Open the output file after running algorithm" box is checkd.
 		+ Click `Run`
 		+ Close the `Clp Raster by Extent` tool after the algorithm has finished. 
 		+ There should now be another layer in the Layers panels called "Clipped (extent)" and that layer should show up as a greyscale image in the project.
-		
 		![](/img/clipping-by-extent-3.png)
-		
 		+ Try coloring this layer just as the main layer was colored in the layer properties. 
 	+ Another way is to change the range of values and/or"Clip out of range values" in the layer properties.
 		+ Open the "Solano_4l7l20_index_ndre" layer properties.

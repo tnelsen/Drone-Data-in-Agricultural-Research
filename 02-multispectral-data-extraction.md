@@ -45,12 +45,24 @@ A shapefile layer (in this case) will be a set of polygons that define the area 
 	+ Repeat for each area of interest.
 	+ End the edit session by again clicking the "Toggle editing" button (yellow pencil)
 	+ Save the edits when prompted.
+
+	> ### Check-in
+	>
+	> The areas of interest in this example are the areas of the field where a higher amount of N fertilizer were added in order to determine if the field would response to an in-season fertilization (see image below). 
+	> ![](/img/shapefile_creation-check-in.png)
+
+
 	+ Add plot level metadata into the `Attribute Table`
 		+ Toggle editing on for the shapefile that was just created.
 		+ Open the `Attribute Table` by  right clicking the shapefile layer and choosin "Open Attribute Table"
-		+  XXXXX to create a new field. (<kbd>Ctrl</kbd> + <kbd>W</kbd>)
+		![](img/open-attribute-table.png)
+		+ Click the yellow `New Field` button to create a new field. (<kbd>Ctrl</kbd> + <kbd>W</kbd>)
+		![](img/new-field.png)
 		+ Name the field appropriatly and populate with metadata
 			+ Pay attention to the "Type" and "Length" fields as they determine what kind of variabile will be in that column and the length limits for that variable. 
+			![](img/field-creation.png)
+		+ When all the metadata is populated, toggle editing off by clicking the yellow pencil and saving the changes when prompted
+		![](img/save-attributes.png)
 
 3. Zonal statistics
 Zonal statics is like using the shapefile just created as a cookie cutter for the image. It 'cuts' the area below the shapefile and then summarizes it with different functions (mean, median, max, etc).
@@ -62,23 +74,26 @@ Zonal statics is like using the shapefile just created as a cookie cutter for th
 	> If the `Processing Toolbox` is not visible turn it on by navigating to "View" > "Panels" > "Processing Toolbox"
 
 	+ Double click "Zonal Statistics" to open the `Zonal Statistics` tool. 
-	+ Choose the shapefile layer that was just created. 
-	+ Set the pre-fix to the band you are extracting (in order to keep track of your data)
-	+ Check whichever boxes of statistics you want to calculate. 
+	+ Set the Raster layer to the image of the field
+	+ Choose the shapefile layer that was just created under "Vector layer containing zones"
+	+ Set the prefix to the band you are extracting (in order to keep track of your data) under "Output column prefix"
+	+ Click `...` and check whichever boxes of statistics you want to calculate. 
 	+ Click `Run` to run the algorithm.
+	![](img/zonal-statistics-tool.png)
 	+ Close the `Zonal Statistics` tool. 
 	+ Look at the values that were just extracted by clicking on the shapefile layer and navigating to "Open Attribute Table"
+	![](img/zonal-statistic-data.png)
 	+ The attribute table should contain values for each of the polygns created and each statistic that was checked in the `Zonal Statistics` tool. 
 
 4. Export the extracted data as a .csv file
 	+ Right click the shapefile use to extract the data in the `Zonal Statistics` tool
 	+ Navigate to "Export" > "Save Feature As…"
+	![](img/to-export.png)
 	+ Change the Format to "Comma Separate Value [CSV]"
 	+ Name and save the file in a folder on your computer
 	+ All other defaults are fine to leave
 	+ Press`OK` when everything is set to output and save the CSV
-
-
+	![](img/to-csv.png)
 
 
 ## Create a shapefile layer (high throughput method)
