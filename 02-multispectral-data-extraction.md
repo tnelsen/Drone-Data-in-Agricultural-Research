@@ -150,11 +150,8 @@ For this section to work, make sure you have the geosphere, rgdal, raster, and r
 	+ Open the "small_plot_trial_extraction_0.0.2.rsx" file in the downloaded "Drone-Data-in_Agricultural-Research-data/R_scripts"
 	+ Click "Save As.." to save the script into the "QGIS3\profiles\default\processing\rscripts" folder so that the script can always be used in QGIS3 (otherwise wlcik the play button to execute)
 
-8.	Restart QGIS to load new script and plugin
-
-9.	In the Processing Toolbox search “small_plot_trial_extraction_0.0.2” and double click it
-
-10.	Run the small_plot_trial
+7.	Run an R script in QGIS
+	+ 
 	+ Set the Origin to the origin point shapefile
 	+ Set the correct number of rows and ranges (the default for both is 10) 
 		+ A row is defined as where the planter drives down while a range is perpendicular to the row.
