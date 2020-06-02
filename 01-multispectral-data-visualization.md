@@ -33,13 +33,9 @@ A raster is data stored as individual pixels and displayed as an image. Most of 
 ## Coloring rasters by values
 
 1.	Right click the "Solano 4l17l20_index_ndre" layer ing the `Layers` panel and choose "Properties.
-
 ![](/img/coloring-rasters-1.png)
-
 2.	In the "Symbology" tab (should open by default), under "Render type" choose "Singleband pseudocolor"
-
 ![](/img/coloring-rasters-2.png)
-
 3.	Set the Min and Max to cover the extent of values that you would like to see in an end product legend. These values should be close to the values that the system recognizes are max and min.
 4. Set the `Interpolation` drop-down to "Linear"
 5. The "RdYlGn" Color ramp is often used to show plant health since it is an easy assumption that red equates to unhealthy plants and green represents healthy plants.
