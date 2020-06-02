@@ -18,7 +18,7 @@ These methods have been presented at Maptime Davis (Analyzing Drone Data October
 
 ## Questions
 
-If you have any questions or feedback, please open an issue, or contact Taylor Nelsen (tsnelsen@ucdavis.edu)
+If you have any questions or feedback, please open an issue or contact Taylor Nelsen (mailto:tsnelsen@ucdavis.edu)
 
 ## Citation
 

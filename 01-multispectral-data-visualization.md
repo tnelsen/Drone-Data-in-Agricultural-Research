@@ -33,9 +33,13 @@ A raster is data stored as individual pixels and displayed as an image. Most of 
 ## Coloring rasters by values
 
 1.	Right click the "Solano 4l17l20_index_ndre" layer ing the `Layers` panel and choose "Properties.
+
 ![](/img/coloring-rasters-1.png)
+
 2.	In the "Symbology" tab (should open by default), under "Render type" choose "Singleband pseudocolor"
+
 ![](/img/coloring-rasters-2.png)
+
 3.	Set the Min and Max to cover the extent of values that you would like to see in an end product legend. These values should be close to the values that the system recognizes are max and min.
 4. Set the `Interpolation` drop-down to "Linear"
 5. The "RdYlGn" Color ramp is often used to show plant health since it is an easy assumption that red equates to unhealthy plants and green represents healthy plants.
@@ -56,20 +60,27 @@ A raster is data stored as individual pixels and displayed as an image. Most of 
 	+ To preview a Project as would be seen by a person with colorblindness go to "View" > "Preview Mode"
 	+ Here you can "Simulate Colorblindess" of multiple types as well as greyscale photocopies. 
 	+ In general, choose colors that are high contrast for the features you wish to highlight. 
-![](/img/display-bp-1.png)
+
+	![](/img/display-bp-1.png)
 
 2. Don’t include areas that are not of interest such as roads or other fields in the color scheme. This ofter causes there to be less contrast in colors in the area of interest and can be distracting to a viewer. Know what you are trying to show and maximize that in the image.
 	+ One way to remove areas of interest is to clip to the area of interest.
 		+ Clip to an area of interest by navigating to the `Clip Raster by Extent` tool though "Raster" > "Extraction" > "Clip Raster by Extent..." (you can also navigate to the `Clip Raster by Extent` tool through the `Processing Toolbox`)
 		+ Choose a "Clipping extent" by clicking `...` and choosing "Select Extent on Canvas"
+		
 		![](/img/clipping-by-extent-1.png)
+		
 		+ This allow you to select an area of interest manually. 
+		
 		![](/img/clipping-by-extent-2.png)
+		
 		+ Once this is done, you have the option to save the "Clipped extent" as well as the option to "Open the output file after running algorithm." For this example, just make sure the Open the output file after running algorithm" box is checkd.
 		+ Click `Run`
 		+ Close the `Clp Raster by Extent` tool after the algorithm has finished. 
 		+ There should now be another layer in the Layers panels called "Clipped (extent)" and that layer should show up as a greyscale image in the project.
+		
 		![](/img/clipping-by-extent-3.png)
+		
 		+ Try coloring this layer just as the main layer was colored in the layer properties. 
 	+ Another way is to change the range of values and/or"Clip out of range values" in the layer properties.
 		+ Open the "Solano_4l7l20_index_ndre" layer properties.
@@ -99,15 +110,25 @@ A raster is data stored as individual pixels and displayed as an image. Most of 
 	+ Navigate to "Project" > "New Print Layout..."  (<kbd>Ctrl</kbd> + <kbd>P</kbd>)
 	+ Enter the title of the print layout in the popup window
 	+ To add a map navigate to "Add Item" > "Add Map" 
+	
 	![](/img/map-1.png)
+	
 	+ Draw a box to contain the map
+	
 	![](/img/map-2.png)
+	
 	+ To make sure the main canvas map is centered by right clicking the layer on the main canvas and chooseing "Zoom to Layer". Then in the print compose under item properties presss "Set Map Extent to Match Main Canvas Extent"
+	
 	![](/img/map-3.png)
+	
 	+ Add additional items such as a scale ar, north arrow, legend, and/or title under the "Add Item" drop down.
+	
 	![](/img/map-4.png)
+	
 	+ When finished with the map, under "Layout" the map can be exported as wither an image "Export as Image..." or a PDF "Export as PDF..."
+	
 	![](/img/map-5.png)
+	
 	+ For another, more indepth tutorial on map making see: https://docs.qgis.org/3.10/en/docs/training_manual/forestry/results_map.html
 
 
