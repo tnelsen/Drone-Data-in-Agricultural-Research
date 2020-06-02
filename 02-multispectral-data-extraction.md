@@ -151,21 +151,22 @@ For this section to work, make sure you have the geosphere, rgdal, raster, and r
 	+ Click "Save As.." to save the script into the "QGIS3\profiles\default\processing\rscripts" folder so that the script can always be used in QGIS3 (otherwise wlcik the play button to execute)
 
 7.	Run an R script in QGIS
-	+ 
+	+ Open the script by right clicking the "small_plot_trial_extraction_0.0.2" under the R icon in the `Processing Toolbox`
+	+ Choose "Execute..."
 	+ Set the Origin to the origin point shapefile
-	+ Set the correct number of rows and ranges (the default for both is 10) 
+	+ Set the correct number of rows and ranges (the default for both is 10 but in this case there are 20 rows and 10 ranges) 
 		+ A row is defined as where the planter drives down while a range is perpendicular to the row.
 	+ Set the width and length of the plots in feet
 	+ The default is for rectangular plots but if you want circular plots unchceck the checkbox next to rectangular
 	+ Click "Run" 
 	+ Close the window when the algorithm is finished processing.
 
-11.	Save the shapefile
+8.	Save the shapefile
 	+ Right click the Output layer that was created then "Export" > "Save Feature As…"
 	+ Choose "ESRI Shapefile" as the output format
 	+ Fill out the file name and folder location. Check to make sure the CRS is correct. 
 
-12. Adjust the Shapefile
+9. Adjust the Shapefile
 In some cases the shapefile will need to be adjusted to make sure that it is accurately within all the plots. 
 	+ Toggle editing on for the shapefile.
 	+ Make sure the shapefile is highlighted. 
@@ -175,9 +176,9 @@ In some cases the shapefile will need to be adjusted to make sure that it is acc
 	+ Move or rotate using the appropriate tools (see below)
 	+ Toggle editing off to save. 
 
-13. Run Zonal Statistic (see above)
+10. Run Zonal Statistic (see above)
 
-14. Export the data as a CSV. 
+11. Export the data as a CSV. 
 
 Now geographic data can be treated like any other data in a spreadsheet. Models can be made. ANOVAs can be run. There are many more things that can be done with both the data values as well as the images. 
 
