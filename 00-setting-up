@@ -1,6 +1,4 @@
-# QGIS 'Step Zero' Assignment
-
-If you plan to take the [QGIS workshop](https://dronecamp.github.io/2020/2020-06-24.html#mapping-and-analyzing-drone-data-in-arcgis-pro) at DroneCamp, please complete the following exercise *before* the start of DroneCamp.
+# Setting Up (detailed instructions)
 
 ## 1. Install QGIS
 
@@ -31,20 +29,20 @@ Unzip the data to a location of your choice (your Desktop or Documents folder ar
 ## 4. Start a New QGIS Project
 
 1. Open QGIS
-2. Under the "Project" tab select "New" to create a new project (or `ctrl + n`)
-3. Under the "Project" tab select "Save As..." (`ctrl + shift + s`) to save the project. Give it a name like *crop_analysis.qgz*.
+2. Under the "Project" tab select "New" to create a new project (or <kbd>Ctrl</kbd> + <kbd>N</kbd>)
+3. Under the "Project" tab select "Save As..." (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd>) to save the project. Give it a name like *multispectral_analysis.qgz*.
 
 * Tip 1: You can save your QGIS project anywhere, but putting in the same location as the data folder will make it easier to find and move.
 
-* Tip 2: It is a good idea to regularly save projects while working on them (`ctrl + s`).
+* Tip 2: It is a good idea to regularly save projects while working on them (<kbd>Ctrl</kbd> + <kbd>S</kbd>).
 
 ## 5. Add a Raster Layer
 
 Imagery from drones and satellites are generally saved in *raster* files (i.e., tif). A **Raster Layer** is simply a layer in your map that contains some raster data.
 
-1. Add a raster layer by going to `Layer` >> `Add Layer` >> `Add Raster Layer...` (or `ctrl + shift + r`). This opens the *Data Source Manager*.
+1. Add a raster layer by going to `Layer` >> `Add Layer` >> `Add Raster Layer...` (or <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>). This opens the *Data Source Manager*.
 
-![](img/qgis_data_source_manager_444x400x256.png)
+![](img/qgis_data_source_manager.png)
 
 2. Make sure the `Source type` radio button is selected to be `File`.
 
@@ -56,6 +54,4 @@ Imagery from drones and satellites are generally saved in *raster* files (i.e., 
 
 Can you see the raster layer? If so, **you're done!**
 
-![](img/check-in-1_1024x576.png)
-
-If not, check the steps and if you still can't figure it out please come to one of the [Drop-In Tech-Support](https://dronecamp.github.io/2020/index.html#schedule-at-a-glance) sessions the week before DroneCamp.
+![](img/check-in-1.png)
