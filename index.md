@@ -24,3 +24,5 @@ Data files for the lessons are available and can be downloaded <a href="https://
 
 * To install QGIS go to: <a href = "https://qgis.org/en/site/forusers/download.html">https://qgis.org/en/site/forusers/download.html</a>. For more detailed instructions about how to install QGIS go to: <a href = "https://qgis.org/en/site/forusers/alldownloads.html">https://qgis.org/en/site/forusers/alldownloads.html</a>. These lessons currently use the long-term (most stable) release of QGIS, QGIS 3.10 (A Coruña). 
 * QGIS is available on Windows, macOS, Linux and Android. Please note that these lessons were developed and tested on Windows. The software appearance and behavior may differ based on operating systems.
+* To install R go to <a href = "https://cran.r-project.org/mirrors.html">https://cran.r-project.org/mirrors.html</a>. For more detailed instruction about hot to install R, a good resource is: <a href="owi.usgs.gov/R/training-curriculum/installr/">owi.usgs.gov/R/training-curriculum/installr/</a> The high throughput method and scripts were tested on R 4.0.0 "Arbor Day". 
+

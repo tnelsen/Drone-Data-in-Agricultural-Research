@@ -1,6 +1,6 @@
 # Drone Data in Agricultural Research
 
-This is an example and starting point for multispectral image analysis designed for beginners. The lessons can be taught in approximately 2 hours. They start with importing and visualizing drone based multispectral data in QGIS and move through how to extract data values for areas of interest in both a manual, low throughput method and a more automated, high throughput method.
+This is an example and starting point for multispectral image analysis designed for beginners. The lessons can be taught in approximately 2 hours. They start with importing and visualizing drone based multispectral data in QGIS and move through how to extract data values for areas of interest in both a manual, low throughput method and a more automated, high throughput method in conjunction with R scripts.
 
 These methods were first developed for analyzing drone based multispectral images for the Grain Cropping Systems Lab at UC Davis and thus are geared towards use in agronomic crops in a research setting. The methods can be used with different image capture (such as satellite) as well as in different research or production settings. 
 
@@ -10,6 +10,8 @@ These methods have been presented at Maptime Davis (Analyzing Drone Data October
 
 * To install QGIS go to: <a href = "https://qgis.org/en/site/forusers/download.html">https://qgis.org/en/site/forusers/download.html</a>. For more detailed instructions about how to install QGIS go to: <a href = "https://qgis.org/en/site/forusers/alldownloads.html">https://qgis.org/en/site/forusers/alldownloads.html</a>. These lessons currently use the long-term (most stable) release of QGIS, QGIS 3.10 (A Coruña). 
 * QGIS is available on Windows, macOS, Linux and Android. Please note that these lessons were developed and tested on Windows. The software appearance and behavior may differ based on operating systems.
+* To use R with QGIS, the R software and the packages needed to run the scripts need to be downloaded outside of QGIS. 
+* To install R go to <a href = "https://cran.r-project.org/mirrors.html">https://cran.r-project.org/mirrors.html</a>. For ore detailed instruction about hot to install R, a good resource is: <a href="owi.usgs.gov/R/training-curriculum/installr/">owi.usgs.gov/R/training-curriculum/installr/</a> The high throughput method and scripts were tested on R 4.0.0 "Arbor Day". 
 
 ## Topics
 
