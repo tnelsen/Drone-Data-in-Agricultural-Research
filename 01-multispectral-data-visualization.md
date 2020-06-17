@@ -18,12 +18,12 @@
 
 A raster is data stored as individual pixels and displayed as an image. Most of the data from drone borne multispectral cameras, satellites, and other image acquisition technologies are stored as rasters. Images can have many extensions. The ones used in this example are .tif files. 
 
-1. Add a raster layer by navigating to the `Data Source Manager | Raster` by going to "Layer" >> "Add Layer" >> "Add Raster Layer..." (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>).
+4. Add a raster layer by navigating to the `Data Source Manager | Raster` by going to "Layer" >> "Add Layer" >> "Add Raster Layer..." (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>).
 ![](img/qgis_data_source_manager.png)
-2. Make sure the `Source type` radio button is selected to be `File`.
-3. Click the `...` to navigate to the raster image *Solano_2l20l20_index_ndre.tif* in the downloaded "Drone-Data-in_Agricultural-Research-data" folder and open it. 
-4. Choose `Add` to add the image to the project.
-5. Close the `Data Source Manager` after the image has successfully been added to the project. 
+5. Make sure the `Source type` radio button is selected to be `File`.
+6. Click the `...` to navigate to the raster image *Solano_2l20l20_index_ndre.tif* in the downloaded "Drone-Data-in_Agricultural-Research-data" folder and open it. 
+7. Choose `Add` to add the image to the project.
+8. Close the `Data Source Manager` after the image has successfully been added to the project. 
 
 > ### Check-in
 >
@@ -33,16 +33,16 @@ A raster is data stored as individual pixels and displayed as an image. Most of 
 
 ## Coloring rasters by values
 
-1.	Right click the *Solano_2l20l20_index_ndre.tif* layer in the `Layers` panel and choose `Properties`.
+9.	Right click the *Solano_2l20l20_index_ndre.tif* layer in the `Layers` panel and choose `Properties`.
 ![](/img/coloring-rasters-1.png)
-2.	In the `Symbology` tab (should open by default), under `Render type` choose `Singleband pseudocolor`
+10.	In the `Symbology` tab (should open by default), under `Render type` choose `Singleband pseudocolor`
 ![](/img/coloring-rasters-2.png)
-3.	Set the Min and Max to cover the extent of values that you would like to see in an end product legend. These values should be close to the values that the system recognizes are max and min.
-4. Set the `Interpolation` drop-down to `Linear`
-5. The "RdYlGn" Color ramp is often used to show plant health since it is an easy assumption that red equates to unhealthy plants and green represents healthy plants.
-6.	Make sure the `Mode` is `Continuous` since this data is continuous - there are no groups or factors.
-7.	Press `Apply` to get a preview of your image.
-8.	Press `OK` when you are done. 
+11.	Set the Min and Max to cover the extent of values that you would like to see in an end product legend. These values should be close to the values that the system recognizes are max and min.
+12. Set the `Interpolation` drop-down to `Linear`
+13. The "RdYlGn" Color ramp is often used to show plant health since it is an easy assumption that red equates to unhealthy plants and green represents healthy plants.
+14.	Make sure the `Mode` is `Continuous` since this data is continuous - there are no groups or factors.
+15.	Press `Apply` to get a preview of your image.
+16.	Press `OK` when you are done. 
 
 
 > ### Check-in
@@ -53,14 +53,14 @@ A raster is data stored as individual pixels and displayed as an image. Most of 
 
 ### Image Display Best Practices 
 
-1. Colors should be colorblind friendly. 
+17. Colors should be colorblind friendly. 
 	+ To preview a Project as would be seen by a person with colorblindness go to `View` >> `Preview Mode`
 	+ Here you can `Simulate Colorblindness` of multiple types as well as greyscale photocopies. 
 	+ In general, choose colors that are high contrast for the features you wish to highlight. 
 
 	![](/img/display-bp-1.png)
 
-2. Don’t include areas that are not of interest such as roads or other fields in the color scheme. This ofter causes there to be less contrast in colors in the area of interest and can be distracting to a viewer. Know what you are trying to show and maximize that in the image.
+18. Don’t include areas that are not of interest such as roads or other fields in the color scheme. This ofter causes there to be less contrast in colors in the area of interest and can be distracting to a viewer. Know what you are trying to show and maximize that in the image.
 	+ One way to remove areas of interest is to clip to the area of interest.
 		+ Clip to an area of interest by navigating to the `Clip Raster by Extent` tool though `Raster` >> `Extraction` >> `Clip Raster by Extent...` (you can also navigate to the `Clip Raster by Extent` tool through the `Processing Toolbox`)
 		+ Choose a *Clipping extent* by clicking `...` and choosing `Select Extent on Canvas`
@@ -86,17 +86,17 @@ A raster is data stored as individual pixels and displayed as an image. Most of 
 >
 > ![](/img/check-in-3.png)
 
-3.  Make the project into a map in order to include a legend 
+19.  Make the project into a map in order to include a legend 
 
 ## Exporting and saving outside for use outside of QGIS
 
-1. To export the styled image
+20. To export the styled image
 	+ Navigate to `Project` >> `Import/Export` >> `Export Map to Image`
 	+ Set parameters such as dpi depending on your end use (print vs screen)
 	+ If you are not planning on using the geographic information from the styled image un-check `Append georeference information`
 	+ Press Save to select the folder you want to save under or press `Copy to Clipboard` to simply copy the image. 
 
-2. To export a map with a legend. 
+21. To export a map with a legend. 
 	+ Navigate to `Project` >> `New Print Layout...`  (<kbd>Ctrl</kbd> + <kbd>P</kbd>)
 	+ Enter the title of the print layout in the pop-up window
 	+ To add a map navigate to `Add Item` >> `Add Map` 
