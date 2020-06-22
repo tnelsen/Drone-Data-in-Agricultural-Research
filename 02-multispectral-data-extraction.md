@@ -24,7 +24,11 @@ A shapefile layer (in this case) will be a set of polygons that define the area 
 >
 > ![](/img/crs-check-in.png)
 
-## 2. Create a feature in the shapefile
+> ### Check-in
+>
+> If the `Digitizing Toolbar` is not visible turn it on by navigating to `View` >> `Toolbars` >> `Digitizing Toolbar`
+
+## 2. Create a features in the shapefile
 
 1. Toggle editing on by right clicking the shapefile layer then selecting the yellow pencil
 ![](/img/toggle-editing.png)
@@ -32,65 +36,66 @@ A shapefile layer (in this case) will be a set of polygons that define the area 
 ![](/img/add-polygon-feature.png)
 3. Using the courser draw the outline of the area of interest. Each left click creates a node of a polygon and a right click closes the polygon.
 4. Set the ID of the polygon by entering an integer into the pop-up window when prompted. 
-5. End the edit session by again clicking the `Toggle editing` button (yellow pencil)
-6. Save the edits when prompted.
+5. Repeat for each area of interest.
+6. End the edit session by again clicking the `Toggle editing` button (yellow pencil)
+7. Save the edits when prompted.
 
-> ### Check-in
+> ### Another way to create features
 >
-> If the `Digitizing Toolbar` is not visible turn it on by navigating to `View` >> `Toolbars` >> `Digitizing Toolbar`
+> Rectangular features can also be created using the `Shape Digitizing Toolbar`. If the `Shape Digitizing Toolbar` is not visible turn it on by navigating to `View` >> `Toolbars` >> `Shape Digitizing Toolbar`. 
+> ![](img/shape-digitizing.png)
+
 
 > ### Check-in
 >
 > The areas of interest in this example are the areas of the field where a higher amount of N fertilizer were added in order to determine if the field would response to an in-season fertilization (see image below). 
-> ![](/img/shapefile_creation-check-in.png)
+> ![](/img/shapefile-creation-check-in.png)
 
 
 ## 3. Edit the shapefile
 
-1. 
 
 ## 4. Add metadata to the shapefile
-
-	+ Add plot level metadata into the `Attribute Table`
-		+ Toggle editing on for the shapefile that was just created.
-		+ Open the `Attribute Table` by  right clicking the shapefile layer and choosing `Open Attribute Table`
-		![](img/open-attribute-table.png)
-		+ Click the yellow `New Field` button to create a new field. (<kbd>Ctrl</kbd> + <kbd>W</kbd>)
-		![](img/new-field.png)
-		+ Name the field appropriately and populate with metadata
-			+ Pay attention to the `Type` and `Length` fields as they determine what kind of variable will be in that column and the length limits for that variable. 
-			![](img/field-creation.png)
-		+ When all the metadata is populated, toggle editing off by clicking the yellow pencil and saving the changes when prompted
-		![](img/save-attributes.png)
+1. Toggle editing on for the shapefile that was just created.
+2. Open the `Attribute Table` by  right clicking the shapefile layer and choosing `Open Attribute Table`
+![](img/open-attribute-table.png)
+3. Click the yellow `New Field` button to create a new field. (<kbd>Ctrl</kbd> + <kbd>W</kbd>)
+![](img/new-field.png)
+4.  Name the field appropriately and populate with metadata
+	+ Pay attention to the `Type` and `Length` fields as they determine what kind of variable will be in that column and the length limits for that variable. 
+	![](img/field-creation.png)
+5. When all the metadata is populated, toggle editing off by clicking the yellow pencil and saving the changes when prompted
+![](img/save-attributes.png)
 
 > ### Check-in
 >
 > If the `Processing Toolbox` is not visible turn it on by navigating to `View` >> `Panels` >> `Processing Toolbox`
 
-5. Zonal statistics
+## 5. Zonal statistics
 Zonal statics is like using the shapefile just created as a cookie cutter for the image. It 'cuts' the area below the shapefile and then summarizes it with different functions (mean, median, max, etc).
-	+ Open the `Zonal Statistics` tool under `Raster Analysis` or by typing it into the search bar of the `Processing Toolbox`
-	+ Double click `Zonal Statistics` to open the `Zonal Statistics` tool. 
-	+ Set the Raster layer to the image of the field
-	+ Choose the shapefile layer that was just created under `Vector layer containing zones`
-	+ Set the prefix to the band you are extracting (in order to keep track of your data) under `Output column prefix`
-	+ Click `...` and check whichever boxes of statistics you want to calculate. 
-	+ Click `Run` to run the algorithm.
-	![](img/zonal-statistics-tool.png)
-	+ Close the `Zonal Statistics` tool. 
-	+ Look at the values that were just extracted by clicking on the shapefile layer and navigating to `Open Attribute Table`
-	![](img/zonal-statistic-data.png)
-	+ The attribute table should contain values for each of the polygons created and each statistic that was checked in the `Zonal Statistics` tool. 
+	+ 
+1. Open the `Zonal Statistics` tool under `Raster Analysis` or by typing it into the search bar of the `Processing Toolbox`
+2. Double click `Zonal Statistics` to open the `Zonal Statistics` tool. 
+3. Set the Raster layer to the image of the field
+4. Choose the shapefile layer that was just created under `Vector layer containing zones`
+5. Set the prefix to the band you are extracting (in order to keep track of your data) under `Output column prefix`
+6. Click `...` and check whichever boxes of statistics you want to calculate. 
+7. Click `Run` to run the algorithm.
+![](img/zonal-statistics-tool.png)
+8. Close the `Zonal Statistics` tool. 
+9. Look at the values that were just extracted by clicking on the shapefile layer and navigating to `Open Attribute Table`
+![](img/zonal-statistic-data.png)
+10. The attribute table should contain values for each of the polygons created and each statistic that was checked in the `Zonal Statistics` tool. 
 
-6. Export the extracted data as a .csv file
-	+ Right click the shapefile use to extract the data in the `Zonal Statistics` tool
-	+ Navigate to `Export` >> `Save Feature As…`
-	![](img/to-export.png)
-	+ Change the Format to `Comma Separate Value [CSV]`
-	+ Name and save the file in a folder on your computer
-	+ All other defaults are fine to leave
-	+ Press `OK` when everything is set to output and save the CSV
-	![](img/to-csv.png)
+## 6. Export the extracted data as a .csv file
+1. Right click the shapefile use to extract the data in the `Zonal Statistics` tool
+2. Navigate to `Export` >> `Save Feature As…`
+![](img/to-export.png)
+3. Change the Format to `Comma Separate Value [CSV]`
+4. Name and save the file in a folder on your computer
+5. All other defaults are fine to leave
+6. Press `OK` when everything is set to output and save the CSV
+![](img/to-csv.png)
 
 Now geographic data can be treated like any other data in a spreadsheet. Models can be made. ANOVAs can be run. There are many more things that can be done with both the data values as well as the images. 
 
