@@ -18,10 +18,10 @@
 
 A raster is data stored as individual pixels and displayed as an image. Most of the data from drone borne multispectral cameras, satellites, and other image acquisition technologies are stored as rasters. Images can have many extensions. The ones used in this example are .tif files. 
 
-1. Add a raster layer by navigating to the `Data Source Manager | Raster` by going to "Layer" >> "Add Layer" >> "Add Raster Layer..." (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>).
+1. Add a raster layer by navigating to the `Data Source Manager` by going to `Layer` >> `Add Layer` >> `Add Raster Layer...` (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>).
 ![](img/qgis_data_source_manager.png)
 2. Make sure the `Source type` radio button is selected to be `File`.
-3. Click the `...` to navigate to the raster image *Solano_2l20l20_index_ndre.tif* in the downloaded "Drone-Data-in_Agricultural-Research-data" folder and open it. 
+3. Click the `...` to navigate to the raster image *Solano_2l20l20_index_ndre.tif* in the downloaded *Drone-Data-in_Agricultural-Research-data/example_data* folder and open it. 
 4. Choose `Add` to add the image to the project.
 5. Close the `Data Source Manager` after the image has successfully been added to the project. 
 
@@ -75,7 +75,7 @@ A raster is data stored as individual pixels and displayed as an image. Most of 
 		+ Try coloring this layer just as the main layer was colored in the layer properties. 
 	+ Another way is to change the range of values and/or"Clip out of range values" in the layer properties.
 		+ Open the "Solano_2l20l20_index_ndre" layer properties.
-		+ Change the `Min` and `Max` to only include values in the area of interest. (`Min` = 0.3, `Max` = 0.7 for this image)
+		+ Change the `Min` and `Max` to only include values in the area of interest. (`Min` = 0.35, `Max` = 0.65 for this image)
 		+ Press `Apply` to preview. 
 		+ To remove the areas out of the chosen range, scroll and check `Clip out of range values`
 		+ Press `OK`

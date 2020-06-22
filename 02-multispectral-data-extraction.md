@@ -8,34 +8,32 @@ This lesson builds on the content and setup done in [Multispectral Data Visualiz
 > * Edit the features and data of a shapefile layer
 > * Use a shapefile layer to extract data from a raster image
 
-## Create a shapefile layer (low throughput method)
-
+## 1. Create a new shapefile layer 
 A shapefile layer (in this case) will be a set of polygons that define the area of interest. 
 
-1. Create a new shapefile layer
-	+ To create a new shapefile layer navigate to `Layer` >> `Create Layer` >> `New Shapefile Layer...`
-	+ Name and save the file
-	+ Select `Polygon` for the geometry type
-	+ Set the coordinate reference system (CRS) to match the CRS of the multispectral image
-	+ Click `OK` to save the blank shapefile
-	![](/img/create-shape-file.png)
+1. To create a new shapefile layer navigate to `Layer` >> `Create Layer` >> `New Shapefile Layer...`
+2. Name and save the file
+3. Select `Polygon` for the geometry type
+4. Set the coordinate reference system (CRS) to match the CRS of the multispectral image
+5. Click `OK` to save the blank shapefile
+![](/img/create-shape-file.png)
 
 > ### Check-in
 >
-> The coordinate reference system (CRS) of the image and the shapefile must match not only for accuracy but also to be able to perform functions such as extracting data. To check the CRS of the raster layer right click on the raster layer *Solano_2l20l20_index_ndre* and navigate to `Properties...`. In the `Image Properties` window under the `Information` tab look for CRS (it should be 3rd from the top). The EPSG number displayed is a unique number for each CRS. in the case of the *Solano_2l20l20_index_ndre* layer the CRS is EPSG:32610 - WGS 84 / UTM zone 10N - Projected". A UTM projection has a unit of meters. This is also shown in the layer information. 
+> The coordinate reference system (CRS) of the image and the shapefile must match not only for accuracy but also to be able to perform functions such as extracting data. To check the CRS of the raster layer right click on the raster layer *Solano_2l20l20_index_ndre* and navigate to `Properties...`. In the `Image Properties` window under the `Information` tab look for CRS (it should be 3rd from the top). The EPSG number displayed is a unique number for each CRS. in the case of the *Solano_2l20l20_index_ndre* layer the CRS is *EPSG:32610 - WGS 84 / UTM zone 10N - Projected*. A UTM projection has a unit of meters. This is also shown in the layer information. 
 >
 > ![](/img/crs-check-in.png)
 
-2. Create features in the shapefile
-	+ Toggle editing on by right clicking the shapefile layer then selecting the yellow pencil
-	![](/img/toggle-editing.png)
-	+ Add a feature by clicking "Add Polygon Feature" in the `Digitizing Toolbar` (<kbd>Ctrl</kbd> + <kbd>.</kbd>)
-	![](/img/add-polygon-feature.png)
-		+ Using the courser draw the outline of the area of interest. Each left click creates a node of a polygon and a right click closes the polygon.
-	+ Set the ID of the polygon by entering an integer into the pop-up window when prompted. 
-	+ Repeat for each area of interest.
-	+ End the edit session by again clicking the `Toggle editing` button (yellow pencil)
-	+ Save the edits when prompted.
+## 2. Create a feature in the shapefile
+
+1. Toggle editing on by right clicking the shapefile layer then selecting the yellow pencil
+![](/img/toggle-editing.png)
+2. Add a feature by clicking `Add Polygon Feature` in the `Digitizing Toolbar` (<kbd>Ctrl</kbd> + <kbd>.</kbd>)
+![](/img/add-polygon-feature.png)
+3. Using the courser draw the outline of the area of interest. Each left click creates a node of a polygon and a right click closes the polygon.
+4. Set the ID of the polygon by entering an integer into the pop-up window when prompted. 
+5. End the edit session by again clicking the `Toggle editing` button (yellow pencil)
+6. Save the edits when prompted.
 
 > ### Check-in
 >
@@ -47,9 +45,11 @@ A shapefile layer (in this case) will be a set of polygons that define the area 
 > ![](/img/shapefile_creation-check-in.png)
 
 
-3. Edit the shapefile
+## 3. Edit the shapefile
 
-4. Add metadata to the shapefile
+1. 
+
+## 4. Add metadata to the shapefile
 
 	+ Add plot level metadata into the `Attribute Table`
 		+ Toggle editing on for the shapefile that was just created.
