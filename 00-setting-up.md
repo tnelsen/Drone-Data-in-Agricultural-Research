@@ -30,7 +30,7 @@ Unzip the data to a location of your choice (your Desktop or Documents folder ar
 
 1. Open QGIS
 2. Under the `Project` tab select `New` to create a new project (<kbd>Ctrl</kbd> + <kbd>N</kbd>)
-3. Under the "Project" tab select "Save As..." (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd>) to save the project. Give it a name like *multispectral_analysis.qgz*.
+3. Under the `Project` tab select `Save As...` (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd>) to save the project. Give it a name like *multispectral_analysis.qgz*.
 
 * Tip 1: You can save your QGIS project anywhere, but putting in the same location as the data folder will make it easier to find and move.
 
@@ -40,13 +40,13 @@ Unzip the data to a location of your choice (your Desktop or Documents folder ar
 
 Imagery from drones and satellites are generally saved in *raster* files (i.e., tif). A **Raster Layer** is simply a layer in your map that contains some raster data.
 
-1. Add a raster layer by going to `Layer` >> `Add Layer` >> `Add Raster Layer...` (or <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>). This opens the *Data Source Manager*.
+1. Add a raster layer by going to `Layer` >> `Add Layer` >> `Add Raster Layer...` (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>). This opens the *Data Source Manager*.
 
 ![](img/qgis_data_source_manager.png)
 
 2. Make sure the `Source type` radio button is selected to be `File`.
 
-3. Click the `...` button and find  the *Solano_2l20l20_index_ndre.tif* file (in the `example_data` folder).
+3. Click the `...` button and find  the *Solano_2l20l20_index_ndre.tif* file (in the downloaded `Drone-Data-in-Agricultural-Research/example_data` folder).
 
 4. Choose `Add` to add the image to the project, then `Close` the Data Source Manager.
 
