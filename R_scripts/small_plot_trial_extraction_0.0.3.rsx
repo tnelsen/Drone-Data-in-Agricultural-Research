@@ -1,4 +1,4 @@
-##small_plot_trial_extraction_0.0.2=name
+##small_plot_trial_extraction_0.0.3=name
 ##Origin=vector
 ##Rows=number 10
 ##Ranges=number 10
@@ -8,14 +8,18 @@
 ##Rectangular = boolean
 ##Output= output vector
 
+library(sp)
 library(geosphere)
 library(raster)
 library(rgeos)
+
+origin_wgs84 <- spTransform(Origin, "+proj=longlat +datum=WGS84 +no_defs")
+
 rows <- Rows - 1
 ranges <- Ranges - 1
-SW_corner <- Origin[Origin$id == 1,]
-SE_corner <- Origin[Origin$id == 2,]
-NW_corner <- Origin[Origin$id == 3,]
+SW_corner <- origin_wgs84[origin_wgs84$id == 1,]
+SE_corner <- origin_wgs84[origin_wgs84$id == 2,]
+NW_corner <- origin_wgs84[origin_wgs84$id == 3,]
 WE_bearing <- finalBearing(SW_corner, SE_corner)
 NS_bearing <- finalBearing(SW_corner, NW_corner)
 
@@ -111,7 +115,7 @@ if (Rectangular == TRUE){
 	plots_spdf <- SpatialPolygonsDataFrame(spolys, plot_ids)
 	crs(plots_spdf) <- CRS("+proj=longlat +ellps=WGS84 +datum=WGS84")
 	
-	Output <- plots_spdf
+	Output <- spTransform(plots_spdf, crs(Origin))
 } else {
     r <- ifelse(Radius > 0, Radius, plot_width*0.3)
 	pts2 <- spTransform(pts, CRS( "+proj=utm +zone=10 +datum=WGS84 +units=m +no_defs")) 
@@ -124,6 +128,6 @@ if (Rectangular == TRUE){
 	names(plot_ids) <- c("plot_number")
 	plots_spdf <- SpatialPolygonsDataFrame(spolys, plot_ids)
 	plots_spdf <- spTransform(plots_spdf, CRS("+proj=longlat +ellps=WGS84 +datum=WGS84"))
-	Output <- plots_spdf
+	Output <- spTransform(plots_spdf, crs(Origin))
 }
 
