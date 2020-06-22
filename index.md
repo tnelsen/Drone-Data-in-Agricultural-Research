@@ -2,7 +2,7 @@
 
 ![](/img/cover-img.jpg)
 
-This is an example and starting point for multispectral image analysis designed for beginners. The lessons can be taught in approximately 2 hours. They start with importing and visualizing drone based multispectral data in QGIS and move through how to extract data values for areas of interest in both a manual, low throughput method and a more automated, high throughput method.
+This is an example and starting point for multispectral image analysis designed for beginners. The lessons can be taught in approximately 2 hours. They start with importing and visualizing drone based multispectral data in QGIS and move through how to extract data values for areas of interest in both a manual, low throughput method and a more automated, high throughput method in conjunction with R scripts.
 
 
 ## Topics
