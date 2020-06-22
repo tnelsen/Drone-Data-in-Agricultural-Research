@@ -4,11 +4,11 @@
 
 To install QGIS, start by downloading the installation file for your operating system:
 
-https://qgis.org/en/site/forusers/download.html
+<a href = "https://qgis.org/en/site/forusers/download.html" target="_blank">https://qgis.org/en/site/forusers/download.html</a>
 
 Please install the **long-term release (most stable)** version, which is currently QGIS 3.10 (*A Coruña*). We recommend using a **Standalone installer**.
 
-Installation is usually very straight-forward. More detailed instructions are available at https://qgis.org/en/site/forusers/alldownloads.html.
+Installation is usually very straight-forward. More detailed instructions are available at <a href = "https://qgis.org/en/site/forusers/alldownloads.html" target="_blank">https://qgis.org/en/site/forusers/alldownloads.html</a>.
 
 QGIS is available on Windows, macOS, Linux and Android. Please note that the DroneCamp 2020 QGIS workshop was developed and tested on **Windows**. The software appearance or behavior may differ slightly on other operating systems.
 
@@ -29,7 +29,7 @@ Unzip the data to a location of your choice (your Desktop or Documents folder ar
 ## 4. Start a New QGIS Project
 
 1. Open QGIS
-2. Under the "Project" tab select "New" to create a new project (or <kbd>Ctrl</kbd> + <kbd>N</kbd>)
+2. Under the `Project` tab select `New` to create a new project (<kbd>Ctrl</kbd> + <kbd>N</kbd>)
 3. Under the "Project" tab select "Save As..." (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd>) to save the project. Give it a name like *multispectral_analysis.qgz*.
 
 * Tip 1: You can save your QGIS project anywhere, but putting in the same location as the data folder will make it easier to find and move.
