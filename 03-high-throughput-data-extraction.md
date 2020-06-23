@@ -12,7 +12,7 @@ Often in a research setting there are many uniform experimental units that are b
 ## 0. R packages
 
 For this section to work, make sure you have the geosphere, rgdal, raster, and rgeos packages installed in R.
-	+ For ease of access, open the *package_install.R* file in the "Drone-Data-in_Agricultural-Research-data" folder
+	+ For ease of access, open the *package_install.R* file in the *Drone-Data-in_Agricultural-Research-data/R-scripts* folder
 	+ Run the entire script by pressing the run button at the top (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Enter</kbd>)
 
 *Note that if you have run R in QGIS before you will have to update the packages in QGIS as well as R when there are new versions of the packages.*
@@ -23,7 +23,9 @@ For this section to work, make sure you have the geosphere, rgdal, raster, and r
 For a refresher see [Adding Raster Layers in Multispectral Data Visualization](01-multispectral-data-visualization.md#2-adding-raster-layers) 
 2. Zoom to the newly added layer. 
 
-## 2. Create a shapefile to set the origin points of your trial. This is used to calculate the angle the field is at the distance the plots are from each other.
+## 2. Create a shapefile to set the origin points of your trial. 
+
+This is used to calculate the angle the field is at the distance the plots are from each other.
 
 1. Create a new layer by choosing: `Layer` >> `Create Layer` >> `New Shapefile Layer…`
 2. lick `...` to name and save the file to a folder
@@ -68,13 +70,14 @@ For a refresher see [Adding Raster Layers in Multispectral Data Visualization](0
 	+ A row is defined as where the planter drives down while a range is perpendicular to the row.
 5. Set the width and length of the plots in feet. If no width and/or length is entered the default is 60% of the distance between plots. 
 6. The default is for rectangular plots but if you want circular plots uncheck the check-box next to rectangular
-7.Click `Run` 
+7. Click `Run` 
+![](img/small-plot-extraction.png)
 8. Close the window when the algorithm is finished processing.
 
 > ### Check-in
 >
 > The shapefile output should look something like the image below.
-> ![](img/small-plot-extraction.png)
+> ![](img/small-plot-output.png)
 
 ## 8.	Save the shapefile
 
@@ -94,7 +97,7 @@ For step-by-step instructions on the `Zonal Statistics` tool see [Zonal Statisti
 
 ## 11. Export the data as a CSV. 
 
-For detailed instructions on how to export a shapefile with data to a csv file see [Export the extracted data as a csv file in Multispectral Data Extraction](02-multispectral-data-extraction.md#6-export-the-extracted-data-as-csv-file)
+For detailed instructions on how to export a shapefile with data to a csv file see [Export as a csv file in Multispectral Data Extraction](02-multispectral-data-extraction.md#6-export-as-csv-file)
 
 This is the end of the lessons so far! Please reach out if you have questions, comments or suggestions.
 
