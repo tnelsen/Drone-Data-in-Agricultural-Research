@@ -1,6 +1,6 @@
 # Multispectral Data Extraction (High throughput)
 
-This lesson builds on the content in [Multispectral Data Extraction (Low throughput)](02-multispectral-data-extraction.md).
+This lesson builds on the content in [Multispectral Data Extraction (Low throughput)](03-multispectral-data-extraction.md).
 
 > ### Learning Objectives
 >
@@ -20,7 +20,7 @@ For this section to work, make sure you have the geosphere, rgdal, raster, and r
 ## 1. Setup new raster layer
 
 1. Add the raster layer *Davis_4l10l18_index_grvi.tif* in the downloaded *Drone-Data-in_Agricultural-Research-data/example_data* to the project.
-For a refresher see [Adding Raster Layers in Multispectral Data Visualization](01-multispectral-data-visualization.md#2-adding-raster-layers) 
+For a refresher see [Adding Raster Layers in Multispectral Data Visualization](02-multispectral-data-visualization.md#2-adding-raster-layers) 
 2. Zoom to the newly added layer. 
 
 ## 2. Create a shapefile to set the origin points of your trial. 
@@ -89,15 +89,15 @@ This is used to calculate the angle the field is at the distance the plots are f
 
 In some cases the shapefile will need to be adjusted to make sure that it is accurately within all the plots. 
 	
-For more information about editing a shapefile see [Edit the shapefile in Multispectral Data Extraction](02-multispectral-data-extraction.md#3-edit-the-shapefile) 
+For more information about editing a shapefile see [Edit the shapefile in Multispectral Data Extraction](03-multispectral-data-extraction.md#3-edit-the-shapefile) 
 
 ## 10. Run Zonal Statistic
 
-For step-by-step instructions on the `Zonal Statistics` tool see [Zonal Statistics in Multispectral Data Extraction](02-multispectral-data-extraction.md#5-zonal-statistics)
+For step-by-step instructions on the `Zonal Statistics` tool see [Zonal Statistics in Multispectral Data Extraction](03-multispectral-data-extraction.md#5-zonal-statistics)
 
 ## 11. Export the data as a CSV. 
 
-For detailed instructions on how to export a shapefile with data to a csv file see [Export as csv in Multispectral Data Extraction](02-multispectral-data-extraction.md#6-export-as-csv)
+For detailed instructions on how to export a shapefile with data to a csv file see [Export as csv in Multispectral Data Extraction](03-multispectral-data-extraction.md#6-export-as-csv)
 
 This is the end of the lessons so far! Please reach out if you have questions, comments or suggestions.
 

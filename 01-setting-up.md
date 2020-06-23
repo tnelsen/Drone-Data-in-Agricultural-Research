@@ -57,4 +57,4 @@ Can you see the raster layer? If so, **you're done!**
 ![](img/check-in-1.png)
 
 
-You are now ready to move onto [Multispectral Data Visualization](01-multispectral-data-visualization.md)!
+You are now ready to move onto [Multispectral Data Visualization](02-multispectral-data-visualization.md)!

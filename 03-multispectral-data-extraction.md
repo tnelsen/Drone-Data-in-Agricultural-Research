@@ -1,6 +1,6 @@
 # Multispectral Data Extraction (low throughput)
 
-This lesson builds on the content and setup done in [Multispectral Data Visualization](01-multispectral-data-visualization.md).
+This lesson builds on the content and setup done in [Multispectral Data Visualization](02-multispectral-data-visualization.md).
 
 > ### Learning Objectives
 >
@@ -117,4 +117,4 @@ Zonal statics is like using the shapefile just created as a cookie cutter for th
 
 Now the drone data can be analyze in programs such as Excel or R. Models can be made. ANOVAs can be run. There are many more things that can be done with both the data values as well as the images. 
 
-Now you are ready to move on to [Multispectral Data Extraction (High throughput)](03-high-throughput-data-extraction.md)!
+Now you are ready to move on to [Multispectral Data Extraction (High throughput)](04-high-throughput-data-extraction.md)!

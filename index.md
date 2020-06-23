@@ -7,10 +7,10 @@ This is an example and starting point for multispectral image analysis designed 
 
 ## Topics
 
-0. [Setting up](00-setting-up.md)
-1. [Multispectral Data Visualization](01-multispectral-data-visualization.md)
-2. [Multispectral Data Extraction (Low throughput)](02-multispectral-data-extraction.md)
-3. [Multispectral Data Extraction (High throughput)](03-high-throughput-data-extraction.md)
+1. [Setting up](01-setting-up.md)
+2. [Multispectral Data Visualization](02-multispectral-data-visualization.md)
+3. [Multispectral Data Extraction (Low throughput)](03-multispectral-data-extraction.md)
+4. [Multispectral Data Extraction (High throughput)](04-high-throughput-data-extraction.md)
 
 ## Requirements
 
