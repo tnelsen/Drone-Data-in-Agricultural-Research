@@ -9,15 +9,19 @@ This lesson builds on the content in [Multispectral Data Extraction (Low through
 
 Often in a research setting there are many uniform experimental units that are being measured. This example show how to create and extract data from a uniform set of experimental plots - in this case of wheat and triticale - with an R script in QGIS. 
 
-0. For this section to work, make sure you have the geosphere, rgdal, raster, and rgeos packages installed in R.
+## R packages
+
+For this section to work, make sure you have the geosphere, rgdal, raster, and rgeos packages installed in R.
 	+ For ease of access, open the *package_install.R* file in the "Drone-Data-in_Agricultural-Research-data" folder
 	+ Run the entire script by pressing the run button at the top (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Enter</kbd>)
 
-1. Setup new raster layer
+*Note that if you have run R in QGIS before you will have to update the packages in QGIS as well as R when there are new versions of the packages.*
 
-> ### Challenge
-> 
-> Add the raster layer "Davis_4l10l18_index_grvi.tif" in the downloaded "Drone-Data-in_Agricultural-Research-data" to the project. Zoom to the newly added layer. 
+## 1. Setup new raster layer
+
+1. Add the raster layer *Davis_4l10l18_index_grvi.tif* in the downloaded *Drone-Data-in_Agricultural-Research-data/example_data* to the project.
+For a refresher see [Multispectral Data Visualization](01-multispectral-data-visualization.md#2-adding-raster-layers) 
+2. Zoom to the newly added layer. 
 
 2. Re-project the raster layer
 	+ Check the projection of your raster file, if it is not in latitude and longitude (EPSG: 4326) then reproject it so that it is in latitude and longitude. 
