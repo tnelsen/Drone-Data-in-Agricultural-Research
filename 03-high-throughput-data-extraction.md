@@ -97,7 +97,7 @@ For step-by-step instructions on the `Zonal Statistics` tool see [Zonal Statisti
 
 ## 11. Export the data as a CSV. 
 
-For detailed instructions on how to export a shapefile with data to a csv file see [Export as a csv file in Multispectral Data Extraction](02-multispectral-data-extraction.md#6-export-as-csv-file)
+For detailed instructions on how to export a shapefile with data to a csv file see [Export as csv in Multispectral Data Extraction](02-multispectral-data-extraction.md#6-export-as-csv)
 
 This is the end of the lessons so far! Please reach out if you have questions, comments or suggestions.
 

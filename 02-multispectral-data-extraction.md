@@ -9,6 +9,7 @@ This lesson builds on the content and setup done in [Multispectral Data Visualiz
 > * Use a shapefile layer to extract data from a raster image
 
 ## 1. Create a new shapefile layer 
+
 A shapefile layer (in this case) will be a set of polygons that define the area of interest. 
 
 1. To create a new shapefile layer navigate to `Layer` >> `Create Layer` >> `New Shapefile Layer...`
@@ -70,6 +71,7 @@ If a shapefile needs to be copied, moved, or resized it can be done!
 As long as the edits are not saved, `Edit` >> `Undo` (<kbd>Ctrl</kbd> + <kbd>Z</kbd>) works. 
 
 ## 4. Add metadata to the shapefile
+
 1. Toggle editing on for the shapefile that was just created.
 2. Open the `Attribute Table` by  right clicking the shapefile layer and choosing `Open Attribute Table`
 ![](img/open-attribute-table.png)
@@ -86,6 +88,7 @@ As long as the edits are not saved, `Edit` >> `Undo` (<kbd>Ctrl</kbd> + <kbd>Z</
 > If the `Processing Toolbox` is not visible turn it on by navigating to `View` >> `Panels` >> `Processing Toolbox`
 
 ## 5. Zonal statistics
+
 Zonal statics is like using the shapefile just created as a cookie cutter for the image. It 'cuts' the area below the shapefile and then summarizes it with different functions (mean, median, max, etc).
 
 1. Open the `Zonal Statistics` tool under `Raster Analysis` in the `Processing Toolbox`
@@ -101,7 +104,7 @@ Zonal statics is like using the shapefile just created as a cookie cutter for th
 ![](img/zonal-statistic-data.png)
 10. The attribute table should contain values for each of the polygons created and each statistic that was checked in the `Zonal Statistics` tool. 
 
-## 6. Export as a csv file
+## 6. Export as csv
 
 1. Right click the shapefile use to extract the data in the `Zonal Statistics` tool
 2. Navigate to `Export` >> `Save Feature As…`
