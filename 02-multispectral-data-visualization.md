@@ -121,6 +121,6 @@ A raster is data stored as individual pixels and displayed as an image. Most of 
 	
 	+ For another, more in-depth tutorial on map making see: [https://docs.qgis.org/3.10/en/docs/training_manual/forestry/results_map.html](https://docs.qgis.org/3.10/en/docs/training_manual/forestry/results_map.html)
 
-Now you are ready to move on to [Multispectral Data Extraction (Low throughput)](02-multispectral-data-extraction.md)!
+Now you are ready to move on to [Multispectral Data Extraction (Low throughput)](03-multispectral-data-extraction.md)!
 
 
