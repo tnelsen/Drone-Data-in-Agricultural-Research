@@ -26,7 +26,7 @@ A shapefile layer (in this case) will be a set of polygons that define the area 
 
 > ### Check-in
 >
-> If the `Digitizing Toolbar` is not visible turn it on by navigating to `View` >> `Toolbars` >> `Digitizing Toolbar`
+> If the `Digitizing Toolbar` and/or `Advanced Digitizing Toolbar` is not visible turn it on by navigating to `View` >> `Toolbars` >> `Digitizing Toolbar` and/or `View` >> `Toolbars` >> `Advanced Digitizing Toolbar`
 
 ## 2. Create a features in the shapefile
 
@@ -42,7 +42,7 @@ A shapefile layer (in this case) will be a set of polygons that define the area 
 
 > ### Another way to create features
 >
-> Rectangular features can also be created using the `Shape Digitizing Toolbar`. If the `Shape Digitizing Toolbar` is not visible turn it on by navigating to `View` >> `Toolbars` >> `Shape Digitizing Toolbar`. 
+> Rectangular features can also be created using the `Shape Digitizing Toolbar`. If the `Shape Digitizing Toolbar` is not visible turn it on by navigating to `View` >> `Toolbars` >> `Shape Digitizing Toolbar`. Use the `Add rectangle from 3 points` tool, choosing `Add Rectangle from 3 Points (Distance from 2nd and 3rd point)`. 
 > ![](img/shape-digitizing.png)
 
 
@@ -54,6 +54,12 @@ A shapefile layer (in this case) will be a set of polygons that define the area 
 
 ## 3. Edit the shapefile
 
+If a shapefile needs to be copied, moved, or resized it can be done!
+
+1. With `Toggle Editing` on, highlight the shapefile in the `Layers` panel. 
+2. In the `Attributes Toolbar` click `Select Features by area or single click`. 
+3. Select the feature that needs to be edits by clicking on it. 
+4. The `Vertex Tool` allow the user `Move Feature` `Copy Feature` ((<kbd>Ctrl</kbd> + <kbd>C</kbd>)`Paste Feature` (<kbd>Ctrl</kbd> + <kbd>V</kbd>) `Delete Selected`
 
 ## 4. Add metadata to the shapefile
 1. Toggle editing on for the shapefile that was just created.
