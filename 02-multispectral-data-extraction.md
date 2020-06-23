@@ -58,8 +58,16 @@ If a shapefile needs to be copied, moved, or resized it can be done!
 
 1. With `Toggle Editing` on, highlight the shapefile in the `Layers` panel. 
 2. In the `Attributes Toolbar` click `Select Features by area or single click`. 
-3. Select the feature that needs to be edits by clicking on it. 
-4. The `Vertex Tool` allow the user `Move Feature` `Copy Feature` ((<kbd>Ctrl</kbd> + <kbd>C</kbd>)`Paste Feature` (<kbd>Ctrl</kbd> + <kbd>V</kbd>) `Delete Selected`
+3. Select the feature(s) that need to be edited by clicking or drawing a box to select.  
+4. In the `Digitizing Toolbar`,
+	+ the `Vertex Tool` allows the user to move the vertices's of a feature
+	+ the `Copy Feature` (<kbd>Ctrl</kbd> + <kbd>C</kbd>) button copies the selected feature(s)
+	+ the `Paste Feature` (<kbd>Ctrl</kbd> + <kbd>V</kbd>) button pastes the selected features(s) over the current features
+	+ the  `Delete Selected` button, does exactly what is implies
+5. In the `Advanced Digitizing Toolbar`,
+	+ choose `Move Feature(s)` the click and drag the feature(s) to their new location
+
+As long as the edits are not saved, `Edit` >> `Undo` (<kbd>Ctrl</kbd> + <kbd>Z</kbd>) works. 
 
 ## 4. Add metadata to the shapefile
 1. Toggle editing on for the shapefile that was just created.
