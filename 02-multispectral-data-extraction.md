@@ -77,7 +77,7 @@ As long as the edits are not saved, `Edit` >> `Undo` (<kbd>Ctrl</kbd> + <kbd>Z</
 ![](img/new-field.png)
 4.  Name the field appropriately and populate with metadata
 	+ Pay attention to the `Type` and `Length` fields as they determine what kind of variable will be in that column and the length limits for that variable. 
-	![](img/field-creation.png)
+![](img/field-creation.png)
 5. When all the metadata is populated, toggle editing off by clicking the yellow pencil and saving the changes when prompted
 ![](img/save-attributes.png)
 
@@ -87,12 +87,12 @@ As long as the edits are not saved, `Edit` >> `Undo` (<kbd>Ctrl</kbd> + <kbd>Z</
 
 ## 5. Zonal statistics
 Zonal statics is like using the shapefile just created as a cookie cutter for the image. It 'cuts' the area below the shapefile and then summarizes it with different functions (mean, median, max, etc).
-	+ 
-1. Open the `Zonal Statistics` tool under `Raster Analysis` or by typing it into the search bar of the `Processing Toolbox`
+
+1. Open the `Zonal Statistics` tool under `Raster Analysis` in the `Processing Toolbox`
 2. Double click `Zonal Statistics` to open the `Zonal Statistics` tool. 
 3. Set the Raster layer to the image of the field
 4. Choose the shapefile layer that was just created under `Vector layer containing zones`
-5. Set the prefix to the band you are extracting (in order to keep track of your data) under `Output column prefix`
+5. Set the prefix to the band or index you are extracting (in order to keep track of your data) under `Output column prefix` (in this case *ndre_*)
 6. Click `...` and check whichever boxes of statistics you want to calculate. 
 7. Click `Run` to run the algorithm.
 ![](img/zonal-statistics-tool.png)
@@ -102,6 +102,7 @@ Zonal statics is like using the shapefile just created as a cookie cutter for th
 10. The attribute table should contain values for each of the polygons created and each statistic that was checked in the `Zonal Statistics` tool. 
 
 ## 6. Export the extracted data as a .csv file
+
 1. Right click the shapefile use to extract the data in the `Zonal Statistics` tool
 2. Navigate to `Export` >> `Save Feature As…`
 ![](img/to-export.png)
@@ -111,6 +112,6 @@ Zonal statics is like using the shapefile just created as a cookie cutter for th
 6. Press `OK` when everything is set to output and save the CSV
 ![](img/to-csv.png)
 
-Now geographic data can be treated like any other data in a spreadsheet. Models can be made. ANOVAs can be run. There are many more things that can be done with both the data values as well as the images. 
+Now the drone data can be analyze in programs such as Excel or R. Models can be made. ANOVAs can be run. There are many more things that can be done with both the data values as well as the images. 
 
 Now you are ready to move on to [Multispectral Data Extraction (High throughput)](03-high-throughput-data-extraction.md)!
