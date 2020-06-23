@@ -9,7 +9,7 @@ This lesson builds on the content in [Multispectral Data Extraction (Low through
 
 Often in a research setting there are many uniform experimental units that are being measured. This example show how to create and extract data from a uniform set of experimental plots - in this case of wheat and triticale - with an R script in QGIS. 
 
-## R packages
+## 0. R packages
 
 For this section to work, make sure you have the geosphere, rgdal, raster, and rgeos packages installed in R.
 	+ For ease of access, open the *package_install.R* file in the "Drone-Data-in_Agricultural-Research-data" folder
@@ -20,81 +20,83 @@ For this section to work, make sure you have the geosphere, rgdal, raster, and r
 ## 1. Setup new raster layer
 
 1. Add the raster layer *Davis_4l10l18_index_grvi.tif* in the downloaded *Drone-Data-in_Agricultural-Research-data/example_data* to the project.
-For a refresher see [Multispectral Data Visualization](01-multispectral-data-visualization.md#2-adding-raster-layers) 
+For a refresher see [Adding Raster Layers in Multispectral Data Visualization](01-multispectral-data-visualization.md#2-adding-raster-layers) 
 2. Zoom to the newly added layer. 
 
-2. Re-project the raster layer
-	+ Check the projection of your raster file, if it is not in latitude and longitude (EPSG: 4326) then reproject it so that it is in latitude and longitude. 
-	+ Make sure the raster layer "Davis_4l10l18_index_grvi" is highlighted and then navigate to `Raster` >> `Projections` >> `Warp (Reproject)`
-	![](img/reproject.png)
-	+ Change the "Target CRS" to EPSG:4326 – WGS 84
-	+ Click "Run" to reproject the image
-	![](img/warp-tool.png)
-	+ Close the processing window when it is done running
+## 2. Create a shapefile to set the origin points of your trial. This is used to calculate the angle the field is at the distance the plots are from each other.
 
-3.	Create a shapefile to set the origin points of your trial. This is used to calculate the angle the field is at the distance the plots are from each other.
-	+ Create a new layer by choosing: "Layer" > "Create Layer" > "New Shapefile Layer…"
-	+ Click `...` to name and save the file to a folder
-	+ Choose "Point" as the geometry
-	+ Make sure the CRS is ESPG: 4326 – WGS 84
-	+ Click `OK` to create the blank shapefile
-	![](img/pt-shp.png)
+1. Create a new layer by choosing: `Layer` >> `Create Layer` >> `New Shapefile Layer…`
+2. lick `...` to name and save the file to a folder
+3. Choose `Point` as the geometry
+4. Click `OK` to create the blank shapefile
+![](img/pt-shp.png)
 
-4.	Set the origin points.
-	+ Toggle editing on the shapefile just created.
-	+ Choose the "Add Point Feature" tool (<kbd>Ctrl</kbd> + <kbd>.</kbd>)
-	![](img/add-pt-feature.png)
-	+ Add 3 points as follows: 
-		+ plot 101 (the bottom left corner of your trial) should have id = 1
-		+ the bottom right corner should have id = 2 
-		+ the top left corner should have id = 3
-	+ Do not include fill rows or data you do not want to extract
-	+ Toggle editing off to save
-	![](img/new-pts.png)
+## 3. Set the origin points.
+	
+1. Toggle editing on the shapefile just created.
+2. Choose the `Add Point Feature` tool (<kbd>Ctrl</kbd> + <kbd>.</kbd>)
+![](img/add-pt-feature.png)
+3. Add 3 points as follows: 
+	+ plot 101 (the bottom left corner of your trial) should have id = 1
+	+ the bottom right corner should have id = 2 
+	+ the top left corner should have id = 3
+4. Do not include fill rows or data you do not want to extract
+5. Toggle editing off to save
+![](img/new-pts.png)
 
-5.	Check that the "Processing R" plugin is installed
-	+ Navigate to: "Plugins" > "Manage and Install Plugins…"
-	+ Finds "Processing R Provider" by scrolling or searching
-	+ Click the plugin and press "Install plugin" if the plugin is not already installed
-	![](img/processing-R-plugin.png)
+## 4. Check that the "Processing R" plugin is installed
 
-6.	Open an R script in QGIS
-	+ Click the R icon and "Create New R Script..." in the `Processing Toolbox`
-	+ Open the "small_plot_trial_extraction_0.0.2.rsx" file in the downloaded "Drone-Data-in_Agricultural-Research-data/R_scripts"
-	+ Click "Save As.." to save the script into the "QGIS3\profiles\default\processing\rscripts" folder so that the script can always be used in QGIS3 (otherwise wlcik the play button to execute)
+1. Navigate to: `Plugins` >> `Manage and Install Plugins…`
+2. Finds `Processing R Provider` by scrolling or searching
+3. Click the plugin and press `Install plugin` if the plugin is not already installed
+![](img/processing-R-plugin.png)
 
-7.	Run an R script in QGIS
-	+ Open the script by right clicking the "small_plot_trial_extraction_0.0.2" under the R icon in the `Processing Toolbox`
-	+ Choose "Execute..."
-	+ Set the Origin to the origin point shapefile
-	+ Set the correct number of rows and ranges (the default for both is 10 but in this case there are 20 rows and 10 ranges) 
-		+ A row is defined as where the planter drives down while a range is perpendicular to the row.
-	+ Set the width and length of the plots in feet
-	+ The default is for rectangular plots but if you want circular plots unchceck the checkbox next to rectangular
-	+ Click "Run" 
-	+ Close the window when the algorithm is finished processing.
+*Note that the first time the plugin is downloaded it is a good idea to restart QGIS to make sure that it is loaded fully.*
 
-8.	Save the shapefile
-	+ Right click the Output layer that was created then "Export" > "Save Feature As…"
-	+ Choose "ESRI Shapefile" as the output format
-	+ Fill out the file name and folder location. Check to make sure the CRS is correct. 
+## 5. Open an R script in QGIS
 
-9. Adjust the Shapefile
+1. Click the R icon and `Create New R Script...` in the `Processing Toolbox`
+2. Open the *small_plot_trial_extraction_0.0.3.rsx* file in the downloaded *Drone-Data-in_Agricultural-Research-data/R_scripts*
+3. Click `Save As..` to save the script into the "QGIS3\profiles\default\processing\rscripts" folder so that the script can always be used in QGIS3 (otherwise click the play button to execute)
+
+## 6.	Run an R script in QGIS
+
+1. Open the script by right clicking the *small_plot_trial_extraction_0.0.3* under the R icon in the `Processing Toolbox`
+2. Choose `Execute...`
+3. Set the `Origin` to the origin point shapefile
+4. Set the correct number of rows and ranges (the default for both is 10 but in this case there are 20 rows and 10 ranges) 
+	+ A row is defined as where the planter drives down while a range is perpendicular to the row.
+5. Set the width and length of the plots in feet. If no width and/or length is entered the default is 60% of the distance between plots. 
+6. The default is for rectangular plots but if you want circular plots uncheck the check-box next to rectangular
+7.Click `Run` 
+8. Close the window when the algorithm is finished processing.
+
+> ### Check-in
+>
+> The shapefile output should look something like the image below.
+> ![](img/small-plot-extraction.png)
+
+## 8.	Save the shapefile
+
+1. Right click the Output layer that was created then `Export` > `Save Feature As…`
+2. Choose `ESRI Shapefile` as the output format
+3. Fill out the file name and folder location. Check to make sure the CRS is correct. 
+
+## 9. Adjust the Shapefile
+
 In some cases the shapefile will need to be adjusted to make sure that it is accurately within all the plots. 
-	+ Toggle editing on for the shapefile.
-	+ Make sure the shapefile is highlighted. 
-	+ Select all (or the subset that you wish to adjust) by choosing the "Select Features by area of single click" and drawing a rectangle around the features you want to adjust.
-	+ Make sure the "Advanced Digitizing Toolbar" is visable.
-		+ If it is not navigate to "View" > "Toolbars"  and check "Advanced Digitizing Toolbar"
-	+ Move or rotate using the appropriate tools (see below)
-	+ Toggle editing off to save. 
+	
+For more information about editing a shapefile see [Edit the shapefile in Multispectral Data Extraction](02-multispectral-data-extraction.md#3-edit-the-shapefile) 
 
-10. Run Zonal Statistic (see above)
+## 10. Run Zonal Statistic
 
-11. Export the data as a CSV. 
+For step-by-step instructions on the `Zonal Statistics` tool see [Zonal Statistics in Multispectral Data Extraction](02-multispectral-data-extraction.md#5-zonal-statistics)
 
-Now geographic data can be treated like any other data in a spreadsheet. Models can be made. ANOVAs can be run. There are many more things that can be done with both the data values as well as the images. 
+## 11. Export the data as a CSV. 
 
+For detailed instructions on how to export a shapefile with data to a csv file see [Export the extracted data as a csv file in Multispectral Data Extraction](02-multispectral-data-extraction.md#6-export-the-extracted-data-as-csv-file)
+
+This is the end of the lessons so far! Please reach out if you have questions, comments or suggestions.
 
 
 

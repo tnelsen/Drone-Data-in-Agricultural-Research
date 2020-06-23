@@ -101,7 +101,7 @@ Zonal statics is like using the shapefile just created as a cookie cutter for th
 ![](img/zonal-statistic-data.png)
 10. The attribute table should contain values for each of the polygons created and each statistic that was checked in the `Zonal Statistics` tool. 
 
-## 6. Export the extracted data as a .csv file
+## 6. Export the extracted data as a csv file
 
 1. Right click the shapefile use to extract the data in the `Zonal Statistics` tool
 2. Navigate to `Export` >> `Save Feature As…`
