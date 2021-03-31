@@ -58,12 +58,12 @@ This is used to calculate the angle the field is at the distance the plots are f
 ## 5. Open an R script in QGIS
 
 1. Click the R icon and `Create New R Script...` in the `Processing Toolbox`
-2. Open the *small_plot_trial_extraction_0.0.3.rsx* file in the downloaded *Drone-Data-in_Agricultural-Research-data/R_scripts*
+2. Open the *small_plot_trial_extraction_0.0.4.rsx* file in the downloaded *Drone-Data-in_Agricultural-Research-data/R_scripts*
 3. Click `Save As..` to save the script into the "QGIS3\profiles\default\processing\rscripts" folder so that the script can always be used in QGIS3 (otherwise click the play button to execute)
 
 ## 6.	Run an R script in QGIS
 
-1. Open the script by right clicking the *small_plot_trial_extraction_0.0.3* under the R icon in the `Processing Toolbox`
+1. Open the script by right clicking the *small_plot_trial_extraction_0.0.4* under the R icon in the `Processing Toolbox`
 2. Choose `Execute...`
 3. Set the `Origin` to the origin point shapefile
 4. Set the correct number of rows and ranges (the default for both is 10 but in this case there are 20 rows and 10 ranges) 
