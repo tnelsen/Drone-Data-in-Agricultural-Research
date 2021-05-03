@@ -1,19 +1,24 @@
-##small_plot_trial_extraction_0.0.3=name
+##small_plot_trial_extraction_0.0.4=name
 ##Origin=vector
 ##Rows=number 10
 ##Ranges=number 10
-##Length = number 
-##Width = number 
-##Radius = number 
-##Rectangular = boolean
-##Output= output vector
+##Length=number 
+##Width=number 
+##Radius=number 
+##Rectangular=boolean
+##Output=output vector
 
 library(sp)
 library(geosphere)
 library(raster)
 library(rgeos)
 
-origin_wgs84 <- spTransform(Origin, "+proj=longlat +datum=WGS84 +no_defs")
+print("starting script")
+print(class(Origin))
+Origin <- as(Origin, 'Spatial')
+print(class(Origin))
+origin_wgs84 <- sp::spTransform(Origin, CRS("+proj=longlat +datum=WGS84 +no_defs"))
+print("test1")
 
 rows <- Rows - 1
 ranges <- Ranges - 1
@@ -115,7 +120,7 @@ if (Rectangular == TRUE){
 	plots_spdf <- SpatialPolygonsDataFrame(spolys, plot_ids)
 	crs(plots_spdf) <- CRS("+proj=longlat +ellps=WGS84 +datum=WGS84")
 	
-	Output <- spTransform(plots_spdf, crs(Origin))
+	Output <- st_as_sf(spTransform(plots_spdf, crs(Origin)))
 } else {
     r <- ifelse(Radius > 0, Radius, plot_width*0.3)
 	pts2 <- spTransform(pts, CRS( "+proj=utm +zone=10 +datum=WGS84 +units=m +no_defs")) 
