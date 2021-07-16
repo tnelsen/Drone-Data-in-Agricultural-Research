@@ -8,10 +8,10 @@ These methods have been presented at Maptime Davis (Analyzing Drone Data October
 
 ## Requirements
 
-* To install QGIS go to: <a href = "https://qgis.org/en/site/forusers/download.html">https://qgis.org/en/site/forusers/download.html</a>. For more detailed instructions about how to install QGIS go to: <a href = "https://qgis.org/en/site/forusers/alldownloads.html">https://qgis.org/en/site/forusers/alldownloads.html</a>. These lessons currently use the long-term (most stable) release of QGIS, QGIS 3.10 (A Coruña). 
+* To install QGIS go to: <a href = "https://qgis.org/en/site/forusers/download.html">https://qgis.org/en/site/forusers/download.html</a>. For more detailed instructions about how to install QGIS go to: <a href = "https://qgis.org/en/site/forusers/alldownloads.html">https://qgis.org/en/site/forusers/alldownloads.html</a>. These lessons currently use the long-term (most stable) release of QGIS, QGIS 3.16.8 (Hannover). 
 * QGIS is available on Windows, macOS, Linux and Android. Please note that these lessons were developed and tested on Windows. The software appearance and behavior may differ based on operating systems.
 * To use R with QGIS, the R software and the packages needed to run the scripts need to be downloaded outside of QGIS. 
-* To install R go to <a href = "https://cran.r-project.org/mirrors.html">https://cran.r-project.org/mirrors.html</a>. For ore detailed instruction about hot to install R, a good resource is: <a href="https://owi.usgs.gov/R/training-curriculum/installr/">https://owi.usgs.gov/R/training-curriculum/installr/</a> The high throughput method and scripts were tested on R 4.0.0 "Arbor Day". 
+* To install R go to <a href = "https://cran.r-project.org/mirrors.html">https://cran.r-project.org/mirrors.html</a>. For ore detailed instruction about hot to install R, a good resource is: <a href="https://owi.usgs.gov/R/training-curriculum/installr/">https://owi.usgs.gov/R/training-curriculum/installr/</a> The high throughput method and scripts were tested on R 4.1.0 "Camp Pontanezen". 
 
 ## Topics
 

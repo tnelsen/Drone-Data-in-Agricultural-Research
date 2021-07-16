@@ -6,7 +6,7 @@ To install QGIS, start by downloading the installation file for your operating s
 
 <a href = "https://qgis.org/en/site/forusers/download.html" target="_blank">https://qgis.org/en/site/forusers/download.html</a>
 
-Please install the **long-term release (most stable)** version, which is currently QGIS 3.10 (*A Coruña*). We recommend using a **Standalone installer**.
+Please install the **long-term release (most stable)** version, which is currently QGIS 3.16.8 (*Hannover*). We recommend using a **Standalone installer**.
 
 Installation is usually very straight-forward. More detailed instructions are available at <a href = "https://qgis.org/en/site/forusers/alldownloads.html" target="_blank">https://qgis.org/en/site/forusers/alldownloads.html</a>.
 

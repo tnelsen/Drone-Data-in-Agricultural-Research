@@ -63,7 +63,7 @@ A raster is data stored as individual pixels and displayed as an image. Most of 
 2. Don’t include areas that are not of interest such as roads or other fields in the color scheme. This ofter causes there to be less contrast in colors in the area of interest and can be distracting to a viewer. Know what you are trying to show and maximize that in the image.
 	+ One way to remove areas of interest is to clip to the area of interest.
 		+ Clip to an area of interest by navigating to the `Clip Raster by Extent` tool though `Raster` >> `Extraction` >> `Clip Raster by Extent...` (you can also navigate to the `Clip Raster by Extent` tool through the `Processing Toolbox`)
-		+ Choose a *Clipping extent* by clicking `...` and choosing `Select Extent on Canvas`
+		+ Choose a *Clipping extent* by clicking `...` and choosing `Draw on Canvas`
 		![](/img/clipping-by-extent-1.png)
 		+ This allow you to select an area of interest manually. 
 		![](/img/clipping-by-extent-2.png)
@@ -119,7 +119,7 @@ A raster is data stored as individual pixels and displayed as an image. Most of 
 	
 	![](/img/map-5.png)
 	
-	+ For another, more in-depth tutorial on map making see: [https://docs.qgis.org/3.10/en/docs/training_manual/forestry/results_map.html](https://docs.qgis.org/3.10/en/docs/training_manual/forestry/results_map.html)
+	+ For another, more in-depth tutorial on map making see: [https://docs.qgis.org/3.16/en/docs/training_manual/forestry/results_map.html](https://docs.qgis.org/3.10/en/docs/training_manual/forestry/results_map.html)
 
 Now you are ready to move on to [Multispectral Data Extraction (Low throughput)](03-multispectral-data-extraction.md)!
 
