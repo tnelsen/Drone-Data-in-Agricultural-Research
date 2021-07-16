@@ -97,16 +97,16 @@ Zonal statics is like using the shapefile just created as a cookie cutter for th
 4. Choose the shapefile layer that was just created under `Vector layer containing zones`
 5. Set the prefix to the band or index you are extracting (in order to keep track of your data) under `Output column prefix` (in this case *ndre_*)
 6. Click `...` and check whichever boxes of statistics you want to calculate. 
-7. Click `Run` to run the algorithm.
+7. Click `Run` to run the algorithm. This will create a new layer with the selected statistics fields.
 ![](img/zonal-statistics-tool.png)
 8. Close the `Zonal Statistics` tool. 
-9. Look at the values that were just extracted by clicking on the shapefile layer and navigating to `Open Attribute Table`
+9. Look at the values that were just extracted by clicking on the new 'Zonal Statistics' layer and navigating to `Open Attribute Table`
 ![](img/zonal-statistic-data.png)
 10. The attribute table should contain values for each of the polygons created and each statistic that was checked in the `Zonal Statistics` tool. 
 
 ## 6. Export as csv
 
-1. Right click the shapefile use to extract the data in the `Zonal Statistics` tool
+1. Right click the 'Zonal Statistics' layer
 2. Navigate to `Export` >> `Save Feature As…`
 ![](img/to-export.png)
 3. Change the Format to `Comma Separate Value [CSV]`
