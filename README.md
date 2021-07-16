@@ -4,7 +4,7 @@ This is an example and starting point for multispectral image analysis designed 
 
 These methods were first developed for analyzing drone based multispectral images for the Grain Cropping Systems Lab at UC Davis and thus are geared towards use in agronomic crops in a research setting. The methods can be used with different image capture (such as satellite) as well as in different research or production settings. 
 
-These methods have been presented at Maptime Davis (Analyzing Drone Data October 2018) , UC Davis Plant Sciences Drone Data in Ag Research workshop (March 2019) and will be a part of UC ANR's DroneCamp 2020 (Multispectral Data Visualization and Extraction with QGIS).
+These methods have been presented at Maptime Davis (Analyzing Drone Data October 2018) , UC Davis Plant Sciences Drone Data in Ag Research workshop (March 2019), UC ANR's DroneCamp 2020 (Multispectral Data Visualization and Extraction with QGIS) and will again be a part of DroneCamp 2021.
 
 ## Requirements
 
