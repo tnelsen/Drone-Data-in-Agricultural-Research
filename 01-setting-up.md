@@ -10,7 +10,7 @@ Please install the **long-term release (most stable)** version, which is current
 
 Installation is usually very straight-forward. More detailed instructions are available at <a href = "https://qgis.org/en/site/forusers/alldownloads.html" target="_blank">https://qgis.org/en/site/forusers/alldownloads.html</a>.
 
-QGIS is available on Windows, macOS, Linux and Android. Please note that the DroneCamp 2020 QGIS workshop was developed and tested on **Windows**. The software appearance or behavior may differ slightly on other operating systems.
+QGIS is available on Windows, macOS, Linux and Android. Please note that this workshop was developed and tested on **Windows**. The software appearance or behavior may differ slightly on other operating systems.
 
 **Launch QGIS**. If it opens, you're in business!
 
