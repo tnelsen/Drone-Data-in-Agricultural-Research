@@ -12,8 +12,8 @@ Often in a research setting there are many uniform experimental units that are b
 ## 0. R packages
 
 For this section to work, make sure you have the geosphere, rgdal, raster, and rgeos packages installed in R.
-	+ For ease of access, open the *package_install.R* file in the *Drone-Data-in_Agricultural-Research-data/R-scripts* folder
-	+ Run the entire script by pressing the run button at the top (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Enter</kbd>)
+	- For ease of access, open the *package_install.R* file in the *Drone-Data-in_Agricultural-Research-data/R-scripts* folder
+	- Run the entire script by pressing the run button at the top (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Enter</kbd>)
 
 *Note that if you have run R in QGIS before you will have to update the packages in QGIS as well as R when there are new versions of the packages.*
 
@@ -28,7 +28,7 @@ For a refresher see [Adding Raster Layers in Multispectral Data Visualization](0
 This is used to calculate the angle the field is at the distance the plots are from each other.
 
 1. Create a new layer by choosing: `Layer` >> `Create Layer` >> `New Shapefile Layer…`
-2. lick `...` to name and save the file to a folder
+2. Click `...` to name and save the file to a folder
 3. Choose `Point` as the geometry
 4. Click `OK` to create the blank shapefile
 ![](img/pt-shp.png)
