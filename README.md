@@ -28,4 +28,4 @@ If you have any questions or feedback, please open an issue or contact Taylor Ne
 
 Please cite as
 
-> Nelsen, Taylor, Drone-Data-in-Agricultural-Research, 2021, GitHub repository, https://github.com/tnelsen/Drone-Data-in-Agricultural-Research
+> Nelsen, T., & Lundy, M. (2021). Drone Data in Agricultural Research  [GitHub repository]. https://github.com/Grain-Cropping-Systems-Lab/Drone-Data-in-Agricultural-Research
