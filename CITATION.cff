@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: 'Drone Data in Agricultural Research '
+message: Please cite this repository as detailed.
+type: software
+authors:
+  - given-names: Taylor
+    family-names: Nelsen
+    email: tsnelsen@ucdavis.edu
+  - given-names: Mark
+    family-names: Lundy
+    email: melundy@ucdavis.edu
